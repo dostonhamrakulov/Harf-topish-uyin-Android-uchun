@@ -65,6 +65,36 @@
                 android:layout_marginTop="10dp"
                 android:id="@+id/id_ani_4"/>
         </RadioGroup>
+        <!--<Button-->
+        <!--android:layout_width="Doston Hamrakulov"-->
+        <!--android:layout_height="Doston Hamrakulov"-->
+        <!--android:text="Doston Hamrakulov"-->
+        <!--android:textAllCaps="false"/>-->
+        <!--<Button-->
+        <!--android:layout_width="Doston Hamrakulov"-->
+        <!--android:layout_height="Doston Hamrakulov"-->
+        <!--android:text="Doston Hamrakulov"-->
+        <!--android:textAllCaps="Doston Hamrakulov"/>-->
+        <!--<Button-->
+        <!--android:layout_width="Doston Hamrakulov"-->
+        <!--android:layout_height="Doston Hamrakulov"-->
+        <!--android:text="Doston Hamrakulov"-->
+        <!--android:textAllCaps="Doston Hamrakulov"/>-->
+        <!--<Button-->
+        <!--android:layout_width="Doston Hamrakulov"-->
+        <!--android:layout_height="Doston Hamrakulov"-->
+        <!--android:text="Doston Hamrakulov"-->
+        <!--android:textAllCaps="false"/>-->
+        <!--<Button-->
+        <!--android:layout_width="Doston Hamrakulov"-->
+        <!--android:layout_height="Doston Hamrakulov"-->
+        <!--android:text="Doston Hamrakulov"-->
+        <!--android:textAllCaps="Doston Hamrakulov"/>-->
+        <!--<Button-->
+        <!--android:layout_width="Doston Hamrakulov"-->
+        <!--android:layout_height="Doston Hamrakulov"-->
+        <!--android:text="Doston Hamrakulov"-->
+        <!--android:textAllCaps="Doston Hamrakulov"/>-->
     </RelativeLayout>
     <Button
         android:layout_width="300dp"
@@ -75,6 +105,157 @@
         android:layout_gravity="center"
         android:onClick="Finishing"
         android:textAllCaps="false"/>
+    <!--<Button-->
+    <!--android:layout_width="Doston Hamrakulov"-->
+    <!--android:layout_height="Doston Hamrakulov"-->
+    <!--android:text="Doston Hamrakulov"-->
+    <!--android:textAllCaps="false"/>-->
+    <!--<Button-->
+    <!--android:layout_width="Doston Hamrakulov"-->
+    <!--android:layout_height="Doston Hamrakulov"-->
+    <!--android:text="Doston Hamrakulov"-->
+    <!--android:textAllCaps="Doston Hamrakulov"/>-->
+    <!--<Button-->
+    <!--android:layout_width="Doston Hamrakulov"-->
+    <!--android:layout_height="Doston Hamrakulov"-->
+    <!--android:text="Doston Hamrakulov"-->
+    <!--android:textAllCaps="Doston Hamrakulov"/>-->
+    <!--<Button-->
+    <!--android:layout_width="Doston Hamrakulov"-->
+    <!--android:layout_height="Doston Hamrakulov"-->
+    <!--android:text="Doston Hamrakulov"-->
+    <!--android:textAllCaps="false"/>-->
+    <!--<Button-->
+    <!--android:layout_width="Doston Hamrakulov"-->
+    <!--android:layout_height="Doston Hamrakulov"-->
+    <!--android:text="Doston Hamrakulov"-->
+    <!--android:textAllCaps="Doston Hamrakulov"/>-->
+    <!--<Button-->
+    <!--android:layout_width="Doston Hamrakulov"-->
+    <!--android:layout_height="Doston Hamrakulov"-->
+    <!--android:text="Doston Hamrakulov"-->
+    <!--android:textAllCaps="Doston Hamrakulov"/>-->
+    <!--<Button-->
+    <!--android:layout_width="Doston Hamrakulov"-->
+    <!--android:layout_height="Doston Hamrakulov"-->
+    <!--android:text="Doston Hamrakulov"-->
+    <!--android:textAllCaps="false"/>-->
+    <!--<Button-->
+    <!--android:layout_width="Doston Hamrakulov"-->
+    <!--android:layout_height="Doston Hamrakulov"-->
+    <!--android:text="Doston Hamrakulov"-->
+    <!--android:textAllCaps="Doston Hamrakulov"/>-->
+    <!--<Button-->
+    <!--android:layout_width="Doston Hamrakulov"-->
+    <!--android:layout_height="Doston Hamrakulov"-->
+    <!--android:text="Doston Hamrakulov"-->
+    <!--android:textAllCaps="Doston Hamrakulov"/>-->
+    <!--<Button-->
+    <!--android:layout_width="Doston Hamrakulov"-->
+    <!--android:layout_height="Doston Hamrakulov"-->
+    <!--android:text="Doston Hamrakulov"-->
+    <!--android:textAllCaps="false"/>-->
+    <!--<Button-->
+    <!--android:layout_width="Doston Hamrakulov"-->
+    <!--android:layout_height="Doston Hamrakulov"-->
+    <!--android:text="Doston Hamrakulov"-->
+    <!--android:textAllCaps="Doston Hamrakulov"/>-->
+    <!--<Button-->
+    <!--android:layout_width="Doston Hamrakulov"-->
+    <!--android:layout_height="Doston Hamrakulov"-->
+    <!--android:text="Doston Hamrakulov"-->
+    <!--android:textAllCaps="Doston Hamrakulov"/>-->
+    <!--<Button-->
+    <!--android:layout_width="Doston Hamrakulov"-->
+    <!--android:layout_height="Doston Hamrakulov"-->
+    <!--android:text="Doston Hamrakulov"-->
+    <!--android:textAllCaps="false"/>-->
+    <!--<Button-->
+    <!--android:layout_width="Doston Hamrakulov"-->
+    <!--android:layout_height="Doston Hamrakulov"-->
+    <!--android:text="Doston Hamrakulov"-->
+    <!--android:textAllCaps="Doston Hamrakulov"/>-->
+    <!--<Button-->
+    <!--android:layout_width="Doston Hamrakulov"-->
+    <!--android:layout_height="Doston Hamrakulov"-->
+    <!--android:text="Doston Hamrakulov"-->
+    <!--android:textAllCaps="Doston Hamrakulov"/>-->
+    <!--<Button-->
+    <!--android:layout_width="Doston Hamrakulov"-->
+    <!--android:layout_height="Doston Hamrakulov"-->
+    <!--android:text="Doston Hamrakulov"-->
+    <!--android:textAllCaps="false"/>-->
+    <!--<Button-->
+    <!--android:layout_width="Doston Hamrakulov"-->
+    <!--android:layout_height="Doston Hamrakulov"-->
+    <!--android:text="Doston Hamrakulov"-->
+    <!--android:textAllCaps="Doston Hamrakulov"/>-->
+    <!--<Button-->
+    <!--android:layout_width="Doston Hamrakulov"-->
+    <!--android:layout_height="Doston Hamrakulov"-->
+    <!--android:text="Doston Hamrakulov"-->
+    <!--android:textAllCaps="Doston Hamrakulov"/>-->
+    <!--<Button-->
+    <!--android:layout_width="Doston Hamrakulov"-->
+    <!--android:layout_height="Doston Hamrakulov"-->
+    <!--android:text="Doston Hamrakulov"-->
+    <!--android:textAllCaps="false"/>-->
+    <!--<Button-->
+    <!--android:layout_width="Doston Hamrakulov"-->
+    <!--android:layout_height="Doston Hamrakulov"-->
+    <!--android:text="Doston Hamrakulov"-->
+    <!--android:textAllCaps="Doston Hamrakulov"/>-->
+    <!--<Button-->
+    <!--android:layout_width="Doston Hamrakulov"-->
+    <!--android:layout_height="Doston Hamrakulov"-->
+    <!--android:text="Doston Hamrakulov"-->
+    <!--android:textAllCaps="Doston Hamrakulov"/>-->
+    <!--<Button-->
+    <!--android:layout_width="Doston Hamrakulov"-->
+    <!--android:layout_height="Doston Hamrakulov"-->
+    <!--android:text="Doston Hamrakulov"-->
+    <!--android:textAllCaps="false"/>-->
+    <!--<Button-->
+    <!--android:layout_width="Doston Hamrakulov"-->
+    <!--android:layout_height="Doston Hamrakulov"-->
+    <!--android:text="Doston Hamrakulov"-->
+    <!--android:textAllCaps="Doston Hamrakulov"/>-->
+    <!--<Button-->
+    <!--android:layout_width="Doston Hamrakulov"-->
+    <!--android:layout_height="Doston Hamrakulov"-->
+    <!--android:text="Doston Hamrakulov"-->
+    <!--android:textAllCaps="Doston Hamrakulov"/>-->
+    <!--<Button-->
+    <!--android:layout_width="Doston Hamrakulov"-->
+    <!--android:layout_height="Doston Hamrakulov"-->
+    <!--android:text="Doston Hamrakulov"-->
+    <!--android:textAllCaps="false"/>-->
+    <!--<Button-->
+    <!--android:layout_width="Doston Hamrakulov"-->
+    <!--android:layout_height="Doston Hamrakulov"-->
+    <!--android:text="Doston Hamrakulov"-->
+    <!--android:textAllCaps="Doston Hamrakulov"/>-->
+    <!--<Button-->
+    <!--android:layout_width="Doston Hamrakulov"-->
+    <!--android:layout_height="Doston Hamrakulov"-->
+    <!--android:text="Doston Hamrakulov"-->
+    <!--android:textAllCaps="Doston Hamrakulov"/>--><!--<Button-->
+    <!--android:layout_width="Doston Hamrakulov"-->
+    <!--android:layout_height="Doston Hamrakulov"-->
+    <!--android:text="Doston Hamrakulov"-->
+    <!--android:textAllCaps="false"/>-->
+    <!--<Button-->
+    <!--android:layout_width="Doston Hamrakulov"-->
+    <!--android:layout_height="Doston Hamrakulov"-->
+    <!--android:text="Doston Hamrakulov"-->
+    <!--android:textAllCaps="Doston Hamrakulov"/>-->
+    <!--<Button-->
+    <!--android:layout_width="Doston Hamrakulov"-->
+    <!--android:layout_height="Doston Hamrakulov"-->
+    <!--android:text="Doston Hamrakulov"-->
+    <!--android:textAllCaps="Doston Hamrakulov"/>-->
+
+
 
 
 
