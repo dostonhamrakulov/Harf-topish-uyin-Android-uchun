@@ -152,5 +152,11 @@ public class StartGame extends AppCompatActivity {
         String city = "Samarkand";
         String country = "Uzbekistan";
     }
+      /*   private void Name(){
+        Stringsdcd name = "Doston Hamrakulov";
+        Stringsdc email = "doston2509@gmail";
+        Stringsdc city = "Samarkand";
+        String sdccountry = "Uzbekistan";
+    }*/
 
 }

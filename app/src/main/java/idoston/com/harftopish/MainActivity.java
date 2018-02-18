@@ -24,22 +24,10 @@ public class MainActivity extends AppCompatActivity {
         String city = "Samarkand";
         String country = "Uzbekistan";
     }
- /*   private void Name(){
-        String name = "Doston Hamrakulov";
-        String email = "doston2509@gmail";
-        String city = "Samarkand";
-        String country = "Uzbekistan";
-    }
-    private void Name(){
-        String name = "Doston Hamrakulov";
-        String email = "doston2509@gmail";
-        String city = "Samarkand";
-        String country = "Uzbekistan";
-    }
-    private void Name(){
-        String name = "Doston Hamrakulov";
-        String email = "doston2509@gmail";
-        String city = "Samarkand";
-        String country = "Uzbekistan";
+  /*   private void Name(){
+        Stringsdcd name = "Doston Hamrakulov";
+        Stringsdc email = "doston2509@gmail";
+        Stringsdc city = "Samarkand";
+        String sdccountry = "Uzbekistan";
     }*/
 }
