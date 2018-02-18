@@ -136,5 +136,8 @@ public class StartGame extends AppCompatActivity {
         Random random = new Random();
         return random.nextInt(4);
     }
+    public void Finishing(View view){
+
+    }
 
 }

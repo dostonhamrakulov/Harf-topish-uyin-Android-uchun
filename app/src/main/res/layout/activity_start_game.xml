@@ -13,6 +13,7 @@
         android:layout_height="wrap_content"
         android:background="@color/app_back2"
         android:textSize="20dp"
+        android:layout_marginTop="20dp"
         android:layout_gravity="center"
         android:textAlignment="center"
         android:text="@string/question"/>
@@ -43,32 +44,36 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:onClick="Check"
+                android:layout_marginTop="10dp"
                 android:id="@+id/id_ani_1"/>
             <RadioButton
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:onClick="Check"
+                android:layout_marginTop="10dp"
                 android:id="@+id/id_ani_2"/>
             <RadioButton
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:onClick="Check"
+                android:layout_marginTop="10dp"
                 android:id="@+id/id_ani_3"/>
             <RadioButton
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:onClick="Check"
+                android:layout_marginTop="10dp"
                 android:id="@+id/id_ani_4"/>
         </RadioGroup>
     </RelativeLayout>
     <Button
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:text="Tekshirmoq"
-        android:id="@+id/id_btn_check"
+        android:text="Tugatmoq"
+        android:id="@+id/id_btn_finish"
         android:layout_marginTop="15dp"
         android:layout_gravity="center"
-        android:onClick="Check"
+        android:onClick="Finishing"
         android:textAllCaps="false"/>
 
 
