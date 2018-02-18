@@ -19,4 +19,22 @@ public class Animals {
         String city = "Samarkand";
         String country = "Uzbekistan";
     }
+     /*   private void Name(){
+        String name = "Doston Hamrakulov";
+        String email = "doston2509@gmail";
+        String city = "Samarkand";
+        String country = "Uzbekistan";
+    }
+    private void Name(){
+        String name = "Doston Hamrakulov";
+        String email = "doston2509@gmail";
+        String city = "Samarkand";
+        String country = "Uzbekistan";
+    }
+    private void Name(){
+        String name = "Doston Hamrakulov";
+        String email = "doston2509@gmail";
+        String city = "Samarkand";
+        String country = "Uzbekistan";
+    }*/
 }
