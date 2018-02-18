@@ -9,26 +9,30 @@
     tools:context="idoston.com.harftopish.StartGame">
 
     <TextView
-        android:layout_width="match_parent"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:text="INFO"/>
+        android:background="@color/app_back2"
+        android:textSize="20dp"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:text="@string/question"/>
+
     <ImageView
-        android:layout_width="230dp"
+        android:layout_width="300dp"
         android:layout_height="230dp"
         android:background="@color/app_back_image"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="15dp"
         android:layout_gravity="center"
-        android:src="@drawable/Elephant"
+        android:src="@drawable/elephant"
         android:id="@+id/id_image"
         android:contentDescription="@string/content"
         />
 
     <RelativeLayout
-        android:layout_width="wrap_content"
-        android:layout_marginLeft="50dp"
-        android:layout_marginTop="25dp"
+        android:layout_width="300dp"
+        android:layout_marginTop="15dp"
         android:background="@color/app_back2"
-        android:layout_marginRight="50dp"
+        android:layout_gravity="center"
         android:layout_height="wrap_content">
         <CheckBox
             android:id="@+id/id_ani_1"
@@ -57,12 +61,11 @@
             android:text="CheckBox" />
     </RelativeLayout>
     <Button
-        android:layout_width="match_parent"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:text="Tekshirmoq"
-        android:layout_marginTop="25dp"
-        android:layout_marginLeft="40dp"
-        android:layout_marginRight="40dp"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center"
         android:textAllCaps="false"/>
 
 

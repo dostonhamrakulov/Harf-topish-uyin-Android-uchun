@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Harf topish</string>
     <string name="content">Hayvoni rasmi</string>
+    <string name="question">Rasmdagi hayvoni ismini Ingliz tilida toping!</string>
 </resources>
