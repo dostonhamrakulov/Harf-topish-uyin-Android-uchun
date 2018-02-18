@@ -12,7 +12,10 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.TextView;
 import android.widget.Toast;
+
+import org.w3c.dom.Text;
 
 import java.util.Random;
 
@@ -24,6 +27,8 @@ public class StartGame extends AppCompatActivity {
     Button btn;
     int random_question;
     int random_position;
+    int score = 0;
+    TextView scoring;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,6 +43,8 @@ public class StartGame extends AppCompatActivity {
         ani_3 = (RadioButton) findViewById(R.id.id_ani_3);
         ani_4 = (RadioButton) findViewById(R.id.id_ani_4);
 
+        scoring = (TextView) findViewById(R.id.text_d_1);
+
         ChangeQuestion();
     }
     public void Check(View view){
@@ -46,6 +53,7 @@ public class StartGame extends AppCompatActivity {
             case R.id.id_ani_1:
                 if (ani_1.getText().toString() == Animals.Animal[random_question]){
                     Toast.makeText(StartGame.this, "Correct", Toast.LENGTH_LONG).show();
+                    score = score + 1;
                 } else {
                     Toast.makeText(StartGame.this, "Incorrect", Toast.LENGTH_LONG).show();
                 }
@@ -55,6 +63,7 @@ public class StartGame extends AppCompatActivity {
             case R.id.id_ani_2:
                 if (ani_2.getText().toString() == Animals.Animal[random_question]){
                     Toast.makeText(StartGame.this, "Correct", Toast.LENGTH_LONG).show();
+                    score = score + 1;
                 } else {
                     Toast.makeText(StartGame.this, "Incorrect", Toast.LENGTH_LONG).show();
                 }
@@ -64,6 +73,7 @@ public class StartGame extends AppCompatActivity {
             case R.id.id_ani_3:
                 if (ani_3.getText().toString() == Animals.Animal[random_question]){
                     Toast.makeText(StartGame.this, "Correct", Toast.LENGTH_LONG).show();
+                    score = score + 1;
                 } else {
                     Toast.makeText(StartGame.this, "Incorrect", Toast.LENGTH_LONG).show();
                 }
@@ -73,6 +83,7 @@ public class StartGame extends AppCompatActivity {
             case R.id.id_ani_4:
                 if (ani_4.getText().toString() == Animals.Animal[random_question]){
                     Toast.makeText(StartGame.this, "Correct", Toast.LENGTH_LONG).show();
+                    score = score + 1;
                 } else {
                     Toast.makeText(StartGame.this, "Incorrect", Toast.LENGTH_LONG).show();
                 }
@@ -92,6 +103,8 @@ public class StartGame extends AppCompatActivity {
 
                 random_position = getRandomForPosition();
                 random_question = getRandomForAnimal();
+
+                scoring.setText("Ball: " + score);
 
                 if(random_position == 0){
                     int id = getResources().getIdentifier("idoston.com.harftopish:drawable/" + Animals.Animal_two[random_question], null, null);

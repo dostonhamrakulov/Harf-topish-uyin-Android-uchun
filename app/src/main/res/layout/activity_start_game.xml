@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/app_background"
     tools:context="idoston.com.harftopish.StartGame">
-
+    <!--====================Zero row========================-->
     <TextView
         app:layout_widthPercent="15%"
         app:layout_heightPercent="10%"
@@ -33,19 +33,54 @@
         android:textAlignment="center"
         android:text=""/>
 
+    <!--====================First row========================-->
+
     <TextView
         app:layout_widthPercent="15%"
-        app:layout_heightPercent="40%"
-        android:id="@+id/text_3"
+        app:layout_heightPercent="7%"
+        android:id="@+id/text_3_1"
         android:layout_marginTop="10dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_below="@id/text1"
         android:text=""/>
+    <TextView
+        app:layout_widthPercent="70%"
+        app:layout_heightPercent="7%"
+        android:layout_below="@id/info1"
+        android:background="@color/app_back_image"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/text_3_1"
+        android:id="@+id/text_d_1"
+        android:text="Ball: 0"
+        android:textSize="25dp"
+        android:textAlignment="center"
+        android:contentDescription="@string/content"
+        />
+    <TextView
+        app:layout_widthPercent="15%"
+        app:layout_heightPercent="7%"
+        android:layout_toRightOf="@id/text_d_1"
+        android:layout_below="@id/text_2"
+        android:id="@+id/text_4_1"
+        android:layout_marginTop="10dp"
+        android:text=""/>
+
+
+    <!--====================Second row========================-->
+    <TextView
+        app:layout_widthPercent="15%"
+        app:layout_heightPercent="31%"
+        android:id="@+id/text_3"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/text_3_1"
+        android:text=""/>
     <ImageView
         app:layout_widthPercent="70%"
-        app:layout_heightPercent="40%"
-        android:layout_below="@id/info1"
+        app:layout_heightPercent="31%"
+        android:layout_below="@id/text_d_1"
         android:background="@color/app_back_image"
         android:layout_marginTop="10dp"
         android:layout_toRightOf="@id/text_3"
@@ -55,12 +90,15 @@
         />
     <TextView
         app:layout_widthPercent="15%"
-        app:layout_heightPercent="40%"
+        app:layout_heightPercent="31%"
         android:layout_toRightOf="@id/id_image"
-        android:layout_below="@id/text_2"
+        android:layout_below="@id/text_4_1"
         android:id="@+id/text_4"
         android:layout_marginTop="10dp"
         android:text=""/>
+
+<!--==========================Third row================================-->
+
 
     <TextView
         app:layout_widthPercent="15%"
@@ -118,6 +156,8 @@
         android:id="@+id/text_6"
         android:layout_marginTop="15dp"
         android:text=""/>
+    <!--==========================Third row================================-->
+
 
 
     <TextView
