@@ -1,5 +1,6 @@
 package idoston.com.harftopish;
 
+import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -49,6 +50,7 @@ public class StartGame extends AppCompatActivity {
                 } else {
                     Toast.makeText(StartGame.this, "Incorrect", Toast.LENGTH_LONG).show();
                 }
+                ani_1.setChecked(false);
                 ChangeQuestion();
                 break;
             case R.id.id_ani_2:
@@ -57,6 +59,7 @@ public class StartGame extends AppCompatActivity {
                 } else {
                     Toast.makeText(StartGame.this, "Incorrect", Toast.LENGTH_LONG).show();
                 }
+                ani_2.setChecked(false);
                 ChangeQuestion();
                 break;
             case R.id.id_ani_3:
@@ -65,6 +68,7 @@ public class StartGame extends AppCompatActivity {
                 } else {
                     Toast.makeText(StartGame.this, "Incorrect", Toast.LENGTH_LONG).show();
                 }
+                ani_3.setChecked(false);
                 ChangeQuestion();
                 break;
             case R.id.id_ani_4:
@@ -73,36 +77,55 @@ public class StartGame extends AppCompatActivity {
                 } else {
                     Toast.makeText(StartGame.this, "Incorrect", Toast.LENGTH_LONG).show();
                 }
+                ani_3.setChecked(false);
                 ChangeQuestion();
                 break;
         }
 
     }
     private void ChangeQuestion(){
-        random_position = getRandomForPosition();
-        random_question = getRandomForAnimal();
+        final Handler handler = new Handler();
+        //IntialColors();
+        //Toast.makeText(getApplicationContext(),"Preparing game board!", Toast.LENGTH_LONG).show();
+        handler.postDelayed(new Runnable() {
+            @Override
+            public void run() {
 
-        if(random_position == 0){
-            ani_1.setText(Animals.Animal[random_question]);
-            ani_2.setText(Animals.Animal[getRandomForAnimal()]);
-            ani_3.setText(Animals.Animal[getRandomForAnimal()]);
-            ani_4.setText(Animals.Animal[getRandomForAnimal()]);
-        }  else if ( random_position == 1){
-            ani_1.setText(Animals.Animal[getRandomForAnimal()]);
-            ani_2.setText(Animals.Animal[random_question]);
-            ani_3.setText(Animals.Animal[getRandomForAnimal()]);
-            ani_4.setText(Animals.Animal[getRandomForAnimal()]);
-        } else if ( random_position == 2){
-            ani_1.setText(Animals.Animal[getRandomForAnimal()]);
-            ani_2.setText(Animals.Animal[getRandomForAnimal()]);
-            ani_3.setText(Animals.Animal[random_question]);
-            ani_4.setText(Animals.Animal[getRandomForAnimal()]);
-        } else if (random_position == 3){
-            ani_1.setText(Animals.Animal[getRandomForAnimal()]);
-            ani_2.setText(Animals.Animal[getRandomForAnimal()]);
-            ani_3.setText(Animals.Animal[getRandomForAnimal()]);
-            ani_4.setText(Animals.Animal[random_question]);
-        }
+                random_position = getRandomForPosition();
+                random_question = getRandomForAnimal();
+
+                if(random_position == 0){
+                    int id = getResources().getIdentifier("idoston.com.harftopish:drawable/" + Animals.Animal_two[random_question], null, null);
+                    image.setImageResource(id);
+                    ani_1.setText(Animals.Animal[random_question]);
+                    ani_2.setText(Animals.Animal[getRandomForAnimal()]);
+                    ani_3.setText(Animals.Animal[getRandomForAnimal()]);
+                    ani_4.setText(Animals.Animal[getRandomForAnimal()]);
+                }  else if ( random_position == 1){
+                    int id = getResources().getIdentifier("idoston.com.harftopish:drawable/" + Animals.Animal_two[random_question], null, null);
+                    image.setImageResource(id);
+                    ani_1.setText(Animals.Animal[getRandomForAnimal()]);
+                    ani_2.setText(Animals.Animal[random_question]);
+                    ani_3.setText(Animals.Animal[getRandomForAnimal()]);
+                    ani_4.setText(Animals.Animal[getRandomForAnimal()]);
+                } else if ( random_position == 2){
+                    int id = getResources().getIdentifier("idoston.com.harftopish:drawable/" + Animals.Animal_two[random_question], null, null);
+                    image.setImageResource(id);
+                    ani_1.setText(Animals.Animal[getRandomForAnimal()]);
+                    ani_2.setText(Animals.Animal[getRandomForAnimal()]);
+                    ani_3.setText(Animals.Animal[random_question]);
+                    ani_4.setText(Animals.Animal[getRandomForAnimal()]);
+                } else if (random_position == 3){
+                    int id = getResources().getIdentifier("idoston.com.harftopish:drawable/" + Animals.Animal_two[random_question], null, null);
+                    image.setImageResource(id);
+                    ani_1.setText(Animals.Animal[getRandomForAnimal()]);
+                    ani_2.setText(Animals.Animal[getRandomForAnimal()]);
+                    ani_3.setText(Animals.Animal[getRandomForAnimal()]);
+                    ani_4.setText(Animals.Animal[random_question]);
+                }
+            }
+        }, 3000);
+
 
     }
     private int getRandomForAnimal(){
@@ -113,4 +136,5 @@ public class StartGame extends AppCompatActivity {
         Random random = new Random();
         return random.nextInt(4);
     }
+
 }
