@@ -34,31 +34,32 @@
         android:background="@color/app_back2"
         android:layout_gravity="center"
         android:layout_height="wrap_content">
-        <CheckBox
-            android:id="@+id/id_ani_1"
+        <RadioGroup
             android:layout_width="match_parent"
+            android:id="@+id/id_radio_g"
             android:layout_height="wrap_content"
-            android:text="CheckBox" />
-
-        <CheckBox
-            android:id="@+id/id_ani_2"
-            android:layout_below="@id/id_ani_1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="CheckBox" />
-
-        <CheckBox
-            android:id="@+id/id_ani_3"
-            android:layout_below="@id/id_ani_2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="CheckBox" />
-        <CheckBox
-            android:id="@+id/id_ani_4"
-            android:layout_below="@id/id_ani_3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="CheckBox" />
+            >
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="Check"
+                android:id="@+id/id_ani_1"/>
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="Check"
+                android:id="@+id/id_ani_2"/>
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="Check"
+                android:id="@+id/id_ani_3"/>
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="Check"
+                android:id="@+id/id_ani_4"/>
+        </RadioGroup>
     </RelativeLayout>
     <Button
         android:layout_width="300dp"
@@ -67,6 +68,7 @@
         android:id="@+id/id_btn_check"
         android:layout_marginTop="15dp"
         android:layout_gravity="center"
+        android:onClick="Check"
         android:textAllCaps="false"/>
 
 

@@ -23,6 +23,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="O`yinni boshlash"
+            android:onClick="Start_game"
             android:textAllCaps="false"/>
         <Button
             android:layout_width="match_parent"
