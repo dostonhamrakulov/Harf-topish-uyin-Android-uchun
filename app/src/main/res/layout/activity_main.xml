@@ -41,22 +41,6 @@
         android:layout_height="wrap_content"
         android:text="Chiqish"
         android:textAllCaps="false"/>
-        <!--<Button-->
-            <!--android:layout_width="Doston Hamrakulov"-->
-            <!--android:layout_height="Doston Hamrakulov"-->
-            <!--android:text="Doston Hamrakulov"-->
-            <!--android:textAllCaps="false"/>-->
-        <!--<Button-->
-            <!--android:layout_width="Doston Hamrakulov"-->
-            <!--android:layout_height="Doston Hamrakulov"-->
-            <!--android:text="Doston Hamrakulov"-->
-            <!--android:textAllCaps="Doston Hamrakulov"/>-->
-        <!--<Button-->
-            <!--android:layout_width="Doston Hamrakulov"-->
-            <!--android:layout_height="Doston Hamrakulov"-->
-            <!--android:text="Doston Hamrakulov"-->
-            <!--android:textAllCaps="Doston Hamrakulov"/>-->
-
     </LinearLayout>
     <!--<Button-->
     <!--android:layout_width="Doston Hamrakulov"-->
