@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/app_background"
+    tools:context="idoston.com.harftopish.StartGame">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="INFO"/>
+    <ImageView
+        android:layout_width="230dp"
+        android:layout_height="230dp"
+        android:background="@color/app_back_image"
+        android:layout_marginTop="25dp"
+        android:layout_gravity="center"
+        android:src="@drawable/Elephant"
+        android:id="@+id/id_image"
+        android:contentDescription="@string/content"
+        />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="25dp"
+        android:background="@color/app_back2"
+        android:layout_marginRight="50dp"
+        android:layout_height="wrap_content">
+        <CheckBox
+            android:id="@+id/id_ani_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CheckBox" />
+
+        <CheckBox
+            android:id="@+id/id_ani_2"
+            android:layout_below="@id/id_ani_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CheckBox" />
+
+        <CheckBox
+            android:id="@+id/id_ani_3"
+            android:layout_below="@id/id_ani_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CheckBox" />
+        <CheckBox
+            android:id="@+id/id_ani_4"
+            android:layout_below="@id/id_ani_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CheckBox" />
+    </RelativeLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tekshirmoq"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:textAllCaps="false"/>
+
+
+
+
+</LinearLayout>
