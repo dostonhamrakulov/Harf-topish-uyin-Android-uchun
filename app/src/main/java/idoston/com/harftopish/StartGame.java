@@ -57,7 +57,7 @@ public class StartGame extends AppCompatActivity {
                 } else {
                     Toast.makeText(StartGame.this, "Incorrect", Toast.LENGTH_LONG).show();
                 }
-                ani_1.setChecked(false);
+                //ani_1.setChecked(false);
                 ChangeQuestion();
                 break;
             case R.id.id_ani_2:
@@ -67,7 +67,7 @@ public class StartGame extends AppCompatActivity {
                 } else {
                     Toast.makeText(StartGame.this, "Incorrect", Toast.LENGTH_LONG).show();
                 }
-                ani_2.setChecked(false);
+                //ani_2.setChecked(false);
                 ChangeQuestion();
                 break;
             case R.id.id_ani_3:
@@ -77,7 +77,7 @@ public class StartGame extends AppCompatActivity {
                 } else {
                     Toast.makeText(StartGame.this, "Incorrect", Toast.LENGTH_LONG).show();
                 }
-                ani_3.setChecked(false);
+                //ani_3.setChecked(false);
                 ChangeQuestion();
                 break;
             case R.id.id_ani_4:
@@ -87,7 +87,7 @@ public class StartGame extends AppCompatActivity {
                 } else {
                     Toast.makeText(StartGame.this, "Incorrect", Toast.LENGTH_LONG).show();
                 }
-                ani_4.setChecked(false);
+                //ani_4.setChecked(false);
                 ChangeQuestion();
                 break;
         }
@@ -105,6 +105,10 @@ public class StartGame extends AppCompatActivity {
                 random_question = getRandomForAnimal();
 
                 scoring.setText("Ball: " + score);
+                ani_1.setChecked(false);
+                ani_2.setChecked(false);
+                ani_3.setChecked(false);
+                ani_4.setChecked(false);
 
                 if(random_position == 0){
                     int id = getResources().getIdentifier("idoston.com.harftopish:drawable/" + Animals.Animal_two[random_question], null, null);
