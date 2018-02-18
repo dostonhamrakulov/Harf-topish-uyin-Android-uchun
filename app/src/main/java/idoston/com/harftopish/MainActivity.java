@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 
 /*
- *   Created by Doston Hamrakulov
+ *   Created by Doston Hamrakulov 18.02.2018
  */
 public class MainActivity extends AppCompatActivity {
 
@@ -17,5 +17,11 @@ public class MainActivity extends AppCompatActivity {
     }
     public void Start_game(View view){
         startActivity(new Intent(MainActivity.this, StartGame.class));
+    }
+    private void Name(){
+        String name = "Doston Hamrakulov";
+        String email = "doston2509@gmail";
+        String city = "Samarkand";
+        String country = "Uzbekistan";
     }
 }

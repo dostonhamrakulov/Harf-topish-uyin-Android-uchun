@@ -1,5 +1,9 @@
 package idoston.com.harftopish;
 
+/*
+ *   Created by Doston Hamrakulov 18.02.2018
+ */
+
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -12,9 +16,6 @@ import android.widget.Toast;
 
 import java.util.Random;
 
-/**
- * Created by Doston on 2/18/2018.
- */
 public class StartGame extends AppCompatActivity {
 
     ImageView image;
@@ -136,6 +137,12 @@ public class StartGame extends AppCompatActivity {
     }
     public void Finishing(View view){
 
+    }
+    private void Name(){
+        String name = "Doston Hamrakulov";
+        String email = "doston2509@gmail";
+        String city = "Samarkand";
+        String country = "Uzbekistan";
     }
 
 }
