@@ -1,9 +1,7 @@
 package idoston.com.harftopish;
-
 /*
  *   Created by Doston Hamrakulov 18.02.2018
  */
-
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -14,9 +12,6 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
-
-import org.w3c.dom.Text;
-
 import java.util.Random;
 
 public class StartGame extends AppCompatActivity {
@@ -57,7 +52,6 @@ public class StartGame extends AppCompatActivity {
                 } else {
                     Toast.makeText(StartGame.this, "Incorrect", Toast.LENGTH_LONG).show();
                 }
-                //ani_1.setChecked(false);
                 ChangeQuestion();
                 break;
             case R.id.id_ani_2:
@@ -67,7 +61,6 @@ public class StartGame extends AppCompatActivity {
                 } else {
                     Toast.makeText(StartGame.this, "Incorrect", Toast.LENGTH_LONG).show();
                 }
-                //ani_2.setChecked(false);
                 ChangeQuestion();
                 break;
             case R.id.id_ani_3:
@@ -77,7 +70,6 @@ public class StartGame extends AppCompatActivity {
                 } else {
                     Toast.makeText(StartGame.this, "Incorrect", Toast.LENGTH_LONG).show();
                 }
-                //ani_3.setChecked(false);
                 ChangeQuestion();
                 break;
             case R.id.id_ani_4:
@@ -87,7 +79,6 @@ public class StartGame extends AppCompatActivity {
                 } else {
                     Toast.makeText(StartGame.this, "Incorrect", Toast.LENGTH_LONG).show();
                 }
-                //ani_4.setChecked(false);
                 ChangeQuestion();
                 break;
         }
