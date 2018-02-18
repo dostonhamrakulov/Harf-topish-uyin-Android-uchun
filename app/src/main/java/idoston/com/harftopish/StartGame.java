@@ -76,7 +76,7 @@ public class StartGame extends AppCompatActivity {
                 } else {
                     Toast.makeText(StartGame.this, "Incorrect", Toast.LENGTH_LONG).show();
                 }
-                ani_3.setChecked(false);
+                ani_4.setChecked(false);
                 ChangeQuestion();
                 break;
         }
