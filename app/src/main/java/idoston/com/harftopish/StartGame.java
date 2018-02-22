@@ -2,9 +2,14 @@ package idoston.com.harftopish;
 /*
  *   Created by Doston Hamrakulov 18.02.2018
  */
+import android.content.DialogInterface;
 import android.os.Handler;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -41,6 +46,8 @@ public class StartGame extends AppCompatActivity {
         scoring = (TextView) findViewById(R.id.text_d_1);
 
         ChangeQuestion();
+
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
     }
     public void Check(View view){
 
@@ -144,7 +151,86 @@ public class StartGame extends AppCompatActivity {
         return random.nextInt(4);
     }
     public void Finishing(View view){
+        AlertDialog.Builder alert_builder = new AlertDialog.Builder(this);
+        alert_builder.setMessage("O`yinni tugatmoqchimisiz?")
+                .setCancelable(false)
+                .setPositiveButton("Ha", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        Toast.makeText(StartGame.this, "Xayr!!!", Toast.LENGTH_SHORT).show();
+                        moveTaskToBack(true);
+                        android.os.Process.killProcess(android.os.Process.myPid());
+                        System.exit(1);
+                    }
+                })
+                .setNegativeButton("Yo`q", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        dialogInterface.cancel();
+                    }
+                });
 
+        AlertDialog alert = alert_builder.create();
+        alert.setTitle("Tasdiqlash!");
+        alert.show();
+    }
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+
+        MenuInflater menuInflater = getMenuInflater();
+        menuInflater.inflate(R.menu.menu_main, menu);
+
+        //getMenuInflater().inflate(R.menu.menu_main, menu);
+        return true;
+    }
+
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle action bar item clicks here. The action bar will
+        // automatically handle clicks on the Home/Up button, so long
+        // as you specify a parent activity in AndroidManifest.xml.
+        int id = item.getItemId();
+
+        //noinspection SimplifiableIfStatement
+        if (id == R.id.id_changing_language) {
+            Toast.makeText(StartGame.this, "Moving to English version", Toast.LENGTH_LONG).show();
+            return true;
+        }
+        switch(id){
+            case R.id.id_about_using:
+                Toast.makeText(StartGame.this, "Instruction", Toast.LENGTH_LONG).show();
+                return true;
+            case R.id.id_exit_app_home:
+                Exit_alert();
+                return true;
+        }
+
+        return super.onOptionsItemSelected(item);
+    }
+    public void Exit_alert(){
+        AlertDialog.Builder alert_builder = new AlertDialog.Builder(this);
+        alert_builder.setMessage("Do you want to close this app?")
+                .setCancelable(false)
+                .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        Toast.makeText(StartGame.this, "Good bye!!!", Toast.LENGTH_SHORT).show();
+                        moveTaskToBack(true);
+                        android.os.Process.killProcess(android.os.Process.myPid());
+                        System.exit(1);
+                    }
+                })
+                .setNegativeButton("No", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        dialogInterface.cancel();
+                    }
+                });
+
+        AlertDialog alert = alert_builder.create();
+        alert.setTitle("Alert!!!");
+        alert.show();
     }
     private void Name(){
         String name = "Doston Hamrakulov";
