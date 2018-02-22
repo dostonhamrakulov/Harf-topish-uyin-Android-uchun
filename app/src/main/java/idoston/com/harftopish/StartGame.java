@@ -151,28 +151,7 @@ public class StartGame extends AppCompatActivity {
         return random.nextInt(4);
     }
     public void Finishing(View view){
-        AlertDialog.Builder alert_builder = new AlertDialog.Builder(this);
-        alert_builder.setMessage("O`yinni tugatmoqchimisiz?")
-                .setCancelable(false)
-                .setPositiveButton("Ha", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialogInterface, int i) {
-                        Toast.makeText(StartGame.this, "Xayr!!!", Toast.LENGTH_SHORT).show();
-                        moveTaskToBack(true);
-                        android.os.Process.killProcess(android.os.Process.myPid());
-                        System.exit(1);
-                    }
-                })
-                .setNegativeButton("Yo`q", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialogInterface, int i) {
-                        dialogInterface.cancel();
-                    }
-                });
-
-        AlertDialog alert = alert_builder.create();
-        alert.setTitle("Tasdiqlash!");
-        alert.show();
+        Exit_alert();
     }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -210,18 +189,18 @@ public class StartGame extends AppCompatActivity {
     }
     public void Exit_alert(){
         AlertDialog.Builder alert_builder = new AlertDialog.Builder(this);
-        alert_builder.setMessage("Do you want to close this app?")
+        alert_builder.setMessage("O`yinni tugatishni xoxlaysizmi?")
                 .setCancelable(false)
-                .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                .setPositiveButton("Ha", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
-                        Toast.makeText(StartGame.this, "Good bye!!!", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(StartGame.this, "Xayr!", Toast.LENGTH_SHORT).show();
                         moveTaskToBack(true);
                         android.os.Process.killProcess(android.os.Process.myPid());
                         System.exit(1);
                     }
                 })
-                .setNegativeButton("No", new DialogInterface.OnClickListener() {
+                .setNegativeButton("Yo`q", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
                         dialogInterface.cancel();
@@ -229,7 +208,7 @@ public class StartGame extends AppCompatActivity {
                 });
 
         AlertDialog alert = alert_builder.create();
-        alert.setTitle("Alert!!!");
+        alert.setTitle("Tasdiqlang");
         alert.show();
     }
     private void Name(){
