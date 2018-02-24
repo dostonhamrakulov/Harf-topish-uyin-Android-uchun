@@ -23,7 +23,7 @@
         android:id="@+id/text_m_2"
         android:textAlignment="center"
         android:textSize="20dp"
-        android:text="@string/question_uz"/>
+        android:text="@string/question_m_uz"/>
     <TextView
         app:layout_widthPercent="15%"
         app:layout_heightPercent="10%"
@@ -86,7 +86,7 @@
         android:background="@color/app_back_white"
         android:layout_marginTop="10dp"
         android:layout_toRightOf="@id/text_m_7"
-        android:src="@drawable/elephant"
+        android:src="@drawable/am"
         android:id="@+id/id_m_image"
         android:contentDescription="@string/content"
         />

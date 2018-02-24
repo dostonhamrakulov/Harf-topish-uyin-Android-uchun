@@ -21,14 +21,14 @@ import java.util.Random;
 
 public class StartGame extends AppCompatActivity {
 
-    ImageView image;
-    RadioGroup radioGroup;
-    RadioButton ani_1, ani_2, ani_3, ani_4;
-    Button btn;
-    int random_question;
-    int random_position;
-    int score = 0;
-    TextView scoring;
+    private ImageView image;
+    private RadioGroup radioGroup;
+    private RadioButton ani_1, ani_2, ani_3, ani_4;
+    private Button btn;
+    private int random_question;
+    private int random_position;
+    private int score = 0;
+    private TextView scoring;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
