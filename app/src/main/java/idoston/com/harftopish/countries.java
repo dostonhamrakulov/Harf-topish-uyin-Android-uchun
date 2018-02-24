@@ -42,6 +42,8 @@ public class countries extends AppCompatActivity {
 
         scoring = (TextView) findViewById(R.id.text_m_5);
 
+        int id = getResources().getIdentifier("idoston.com.harftopish:drawable/" + Country.country_image[getRandomForCountry()], null, null);
+        image.setImageResource(id);
         ChangeQuestion();
 
         getSupportActionBar().setDisplayShowHomeEnabled(true);
@@ -135,7 +137,7 @@ public class countries extends AppCompatActivity {
                     con_4.setText(Country.country_name[random_question]);
                 }
             }
-        }, 2000);
+        }, 1000);
 
 
     }

@@ -45,6 +45,9 @@ public class StartGame extends AppCompatActivity {
 
         scoring = (TextView) findViewById(R.id.text_d_1);
 
+        int id = getResources().getIdentifier("idoston.com.harftopish:drawable/" + Animals.Animal_two[getRandomForAnimal()], null, null);
+        image.setImageResource(id);
+
         ChangeQuestion();
 
         getSupportActionBar().setDisplayShowHomeEnabled(true);
@@ -138,7 +141,7 @@ public class StartGame extends AppCompatActivity {
                     ani_4.setText(Animals.Animal[random_question]);
                 }
             }
-        }, 3000);
+        }, 1000);
 
 
     }
