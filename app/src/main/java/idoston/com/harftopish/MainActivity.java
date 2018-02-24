@@ -24,6 +24,9 @@ public class MainActivity extends AppCompatActivity {
     public void Start_game(View view){
         startActivity(new Intent(MainActivity.this, StartGame.class));
     }
+    public void Start_countries(View view){
+        startActivity(new Intent(MainActivity.this, countries.class));
+    }
     private void Name(){
         String name = "Doston Hamrakulov";
         String email = "doston2509@gmail";

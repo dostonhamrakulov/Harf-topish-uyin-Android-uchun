@@ -35,7 +35,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Mamlakatlar"
-            android:onClick="Start_game"
+            android:onClick="Start_countries"
             android:textAllCaps="false"/>
         <Button
             android:layout_width="match_parent"
