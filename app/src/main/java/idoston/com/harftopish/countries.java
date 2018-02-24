@@ -46,6 +46,48 @@ public class countries extends AppCompatActivity {
 
         getSupportActionBar().setDisplayShowHomeEnabled(true);
     }
+    public void Check_m(View view){
+
+        switch(view.getId()){
+            case R.id.id_m_1:
+                if (con_1.getText().toString() == Country.country_name[random_question]){
+                    Toast.makeText(countries.this, "Correct", Toast.LENGTH_LONG).show();
+                    score = score + 1;
+                } else {
+                    Toast.makeText(countries.this, "Incorrect. Ans: " + Country.country_name[random_question], Toast.LENGTH_LONG).show();
+                }
+                ChangeQuestion();
+                break;
+            case R.id.id_m_2:
+                if (con_2.getText().toString() == Country.country_name[random_question]){
+                    Toast.makeText(countries.this, "Correct", Toast.LENGTH_LONG).show();
+                    score = score + 1;
+                } else {
+                    Toast.makeText(countries.this, "Incorrect. Ans: " + Country.country_name[random_question], Toast.LENGTH_LONG).show();
+                }
+                ChangeQuestion();
+                break;
+            case R.id.id_m_3:
+                if (con_3.getText().toString() == Country.country_name[random_question]){
+                    Toast.makeText(countries.this, "Correct", Toast.LENGTH_LONG).show();
+                    score = score + 1;
+                } else {
+                    Toast.makeText(countries.this, "Incorrect. Ans: " + Country.country_name[random_question], Toast.LENGTH_LONG).show();
+                }
+                ChangeQuestion();
+                break;
+            case R.id.id_m_4:
+                if (con_4.getText().toString() == Country.country_name[random_question]){
+                    Toast.makeText(countries.this, "Correct", Toast.LENGTH_LONG).show();
+                    score = score + 1;
+                } else {
+                    Toast.makeText(countries.this, "Incorrect. Ans: " + Country.country_name[random_question], Toast.LENGTH_LONG).show();
+                }
+                ChangeQuestion();
+                break;
+        }
+
+    }
     private void ChangeQuestion(){
         final Handler handler = new Handler();
         //IntialColors();
@@ -93,7 +135,7 @@ public class countries extends AppCompatActivity {
                     con_4.setText(Country.country_name[random_question]);
                 }
             }
-        }, 3000);
+        }, 2000);
 
 
     }
@@ -107,9 +149,6 @@ public class countries extends AppCompatActivity {
     }
     public void Finish_m(View view){
         Exit_alert();
-    }
-    public void Check_m(View view){
-
     }
     public void Exit_alert(){
         AlertDialog.Builder alert_builder = new AlertDialog.Builder(this);
