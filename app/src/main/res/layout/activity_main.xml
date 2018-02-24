@@ -46,6 +46,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Chiqish"
+            android:onClick="Finishing_main"
         android:textAllCaps="false"/>
     </LinearLayout>
 </RelativeLayout>
