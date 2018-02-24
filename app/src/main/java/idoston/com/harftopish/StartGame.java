@@ -57,37 +57,37 @@ public class StartGame extends AppCompatActivity {
         switch(view.getId()){
             case R.id.id_ani_1:
                 if (ani_1.getText().toString() == Animals.Animal[random_question]){
-                    Toast.makeText(StartGame.this, "Correct", Toast.LENGTH_LONG).show();
+                    Toast.makeText(StartGame.this, "To`g`ri", Toast.LENGTH_LONG).show();
                     score = score + 1;
                 } else {
-                    Toast.makeText(StartGame.this, "Incorrect", Toast.LENGTH_LONG).show();
+                    Toast.makeText(StartGame.this, "Noto`g`ri. J: " + Animals.Animal[random_question], Toast.LENGTH_LONG).show();
                 }
                 ChangeQuestion();
                 break;
             case R.id.id_ani_2:
                 if (ani_2.getText().toString() == Animals.Animal[random_question]){
-                    Toast.makeText(StartGame.this, "Correct", Toast.LENGTH_LONG).show();
+                    Toast.makeText(StartGame.this, "To`g`ri", Toast.LENGTH_LONG).show();
                     score = score + 1;
                 } else {
-                    Toast.makeText(StartGame.this, "Incorrect", Toast.LENGTH_LONG).show();
+                    Toast.makeText(StartGame.this, "Noto`g`ri. J: " + Animals.Animal[random_question], Toast.LENGTH_LONG).show();
                 }
                 ChangeQuestion();
                 break;
             case R.id.id_ani_3:
                 if (ani_3.getText().toString() == Animals.Animal[random_question]){
-                    Toast.makeText(StartGame.this, "Correct", Toast.LENGTH_LONG).show();
+                    Toast.makeText(StartGame.this, "To`g`ri", Toast.LENGTH_LONG).show();
                     score = score + 1;
                 } else {
-                    Toast.makeText(StartGame.this, "Incorrect", Toast.LENGTH_LONG).show();
+                    Toast.makeText(StartGame.this, "Noto`g`ri. J: " + Animals.Animal[random_question], Toast.LENGTH_LONG).show();
                 }
                 ChangeQuestion();
                 break;
             case R.id.id_ani_4:
                 if (ani_4.getText().toString() == Animals.Animal[random_question]){
-                    Toast.makeText(StartGame.this, "Correct", Toast.LENGTH_LONG).show();
+                    Toast.makeText(StartGame.this, "To`g`ri", Toast.LENGTH_LONG).show();
                     score = score + 1;
                 } else {
-                    Toast.makeText(StartGame.this, "Incorrect", Toast.LENGTH_LONG).show();
+                    Toast.makeText(StartGame.this, "Noto`g`ri. J: " + Animals.Animal[random_question], Toast.LENGTH_LONG).show();
                 }
                 ChangeQuestion();
                 break;

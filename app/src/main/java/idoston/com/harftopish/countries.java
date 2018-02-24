@@ -53,37 +53,37 @@ public class countries extends AppCompatActivity {
         switch(view.getId()){
             case R.id.id_m_1:
                 if (con_1.getText().toString() == Country.country_name[random_question]){
-                    Toast.makeText(countries.this, "Correct", Toast.LENGTH_LONG).show();
+                    Toast.makeText(countries.this, "To`g`ri", Toast.LENGTH_LONG).show();
                     score = score + 1;
                 } else {
-                    Toast.makeText(countries.this, "Incorrect. Ans: " + Country.country_name[random_question], Toast.LENGTH_LONG).show();
+                    Toast.makeText(countries.this, "Noto`g`ri. J: " + Country.country_name[random_question], Toast.LENGTH_LONG).show();
                 }
                 ChangeQuestion();
                 break;
             case R.id.id_m_2:
                 if (con_2.getText().toString() == Country.country_name[random_question]){
-                    Toast.makeText(countries.this, "Correct", Toast.LENGTH_LONG).show();
+                    Toast.makeText(countries.this, "To`g`ri", Toast.LENGTH_LONG).show();
                     score = score + 1;
                 } else {
-                    Toast.makeText(countries.this, "Incorrect. Ans: " + Country.country_name[random_question], Toast.LENGTH_LONG).show();
+                    Toast.makeText(countries.this, "Noto`g`ri. J: " + Country.country_name[random_question], Toast.LENGTH_LONG).show();
                 }
                 ChangeQuestion();
                 break;
             case R.id.id_m_3:
                 if (con_3.getText().toString() == Country.country_name[random_question]){
-                    Toast.makeText(countries.this, "Correct", Toast.LENGTH_LONG).show();
+                    Toast.makeText(countries.this, "To`g`ri", Toast.LENGTH_LONG).show();
                     score = score + 1;
                 } else {
-                    Toast.makeText(countries.this, "Incorrect. Ans: " + Country.country_name[random_question], Toast.LENGTH_LONG).show();
+                    Toast.makeText(countries.this, "Noto`g`ri. J: " + Country.country_name[random_question], Toast.LENGTH_LONG).show();
                 }
                 ChangeQuestion();
                 break;
             case R.id.id_m_4:
                 if (con_4.getText().toString() == Country.country_name[random_question]){
-                    Toast.makeText(countries.this, "Correct", Toast.LENGTH_LONG).show();
+                    Toast.makeText(countries.this, "To`g`ri", Toast.LENGTH_LONG).show();
                     score = score + 1;
                 } else {
-                    Toast.makeText(countries.this, "Incorrect. Ans: " + Country.country_name[random_question], Toast.LENGTH_LONG).show();
+                    Toast.makeText(countries.this, "Noto`g`ri. J: " + Country.country_name[random_question], Toast.LENGTH_LONG).show();
                 }
                 ChangeQuestion();
                 break;
