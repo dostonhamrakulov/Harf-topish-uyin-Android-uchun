@@ -1,7 +1,8 @@
 <resources>
     <string name="app_name">Harf topish</string>
     <string name="content">Hayvoni rasmi</string>
-    <string name="question">Rasmdagi hayvoni ismini Ingliz tilida toping!</string>
+    <string name="question_uz">Rasmdagi hayvoni ismini Ingliz tilida toping!</string>
+    <string name="question_en">Find the name of animal!</string>
     <string name="info_en">The game is intended for children. Here, a child can try finding correct name of animals corresponding displayed animal image!</string>
     <string name="info_uz">Bu o`yin bolalar uchun. Bu yerda, bola rasmdagi hayvoni ismini topishga harakat qiladi.</string>
 
