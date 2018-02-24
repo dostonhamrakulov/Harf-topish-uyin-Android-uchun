@@ -5,6 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="idoston.com.harftopish.countries">
+
+    <!--====================Start First row========================-->
     <TextView
         app:layout_widthPercent="15%"
         app:layout_heightPercent="10%"
@@ -21,14 +23,167 @@
         android:id="@+id/text_m_2"
         android:textAlignment="center"
         android:textSize="20dp"
-        android:text="@string/question"/>
+        android:text="@string/question_uz"/>
     <TextView
         app:layout_widthPercent="15%"
         app:layout_heightPercent="10%"
         android:layout_marginTop="5dp"
         android:layout_toRightOf="@id/text_m_2"
-        android:id="@+id/text_2"
+        android:id="@+id/text_m_3"
         android:textAlignment="center"
         android:text=""/>
+    <!--====================   End First row    ========================-->
+
+    <!--====================    Start Second row    ========================-->
+    <TextView
+        app:layout_widthPercent="15%"
+        app:layout_heightPercent="7%"
+        android:id="@+id/text_m_4"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/text_m_1"
+        android:text=""/>
+    <TextView
+        app:layout_widthPercent="70%"
+        app:layout_heightPercent="7%"
+        android:layout_below="@id/text_m_1"
+        android:background="@color/app_back_white"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/text_m_4"
+        android:id="@+id/text_m_5"
+        android:text="Ball: 0"
+        android:textSize="25dp"
+        android:textAlignment="center"
+        android:contentDescription="@string/content"
+        />
+    <TextView
+        app:layout_widthPercent="15%"
+        app:layout_heightPercent="7%"
+        android:layout_toRightOf="@id/text_m_5"
+        android:layout_below="@id/text_m_3"
+        android:id="@+id/text_m_6"
+        android:layout_marginTop="10dp"
+        android:text=""/>
+
+    <!--====================    End Second row    ========================-->
+
+
+    <!--====================    Start Third row    ========================-->
+    <TextView
+        app:layout_widthPercent="15%"
+        app:layout_heightPercent="31%"
+        android:id="@+id/text_m_7"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/text_m_4"
+        android:text=""/>
+    <ImageView
+        app:layout_widthPercent="70%"
+        app:layout_heightPercent="31%"
+        android:layout_below="@id/text_m_5"
+        android:background="@color/app_back_white"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/text_m_7"
+        android:src="@drawable/elephant"
+        android:id="@+id/id_m_image"
+        android:contentDescription="@string/content"
+        />
+    <TextView
+        app:layout_widthPercent="15%"
+        app:layout_heightPercent="31%"
+        android:layout_toRightOf="@id/id_m_image"
+        android:layout_below="@id/text_m_6"
+        android:id="@+id/text_m_9"
+        android:layout_marginTop="10dp"
+        android:text=""/>
+
+    <!--====================    End Third row    ========================-->
+
+
+    <!--========================== Start Fourth row     ================================-->
+
+
+    <TextView
+        app:layout_widthPercent="15%"
+        app:layout_heightPercent="35%"
+        android:id="@+id/text_m_10"
+        android:layout_marginTop="15dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/text_m_7"
+        android:text=""/>
+
+    <RadioGroup
+        android:background="@color/app_back_white"
+        app:layout_widthPercent="70%"
+        android:id="@+id/id_m_radio_g"
+        android:layout_toRightOf="@id/text_m_10"
+        android:layout_below="@id/id_m_image"
+        android:layout_marginTop="15dp"
+        app:layout_heightPercent="35%"
+        >
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="Check_m"
+            android:text="Uzbekistan"
+            android:layout_marginTop="10dp"
+            android:id="@+id/id_m_1"/>
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="Check_m"
+            android:text="Malasia"
+            android:layout_marginTop="10dp"
+            android:id="@+id/id_m_2"/>
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="Check_m"
+            android:text="Australia"
+            android:layout_marginTop="10dp"
+            android:id="@+id/id_m_3"/>
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="Check_m"
+            android:text="Vinusuela"
+            android:layout_marginTop="10dp"
+            android:id="@+id/id_ani_4"/>
+    </RadioGroup>
+    <TextView
+        app:layout_widthPercent="15%"
+        app:layout_heightPercent="35%"
+        android:layout_toRightOf="@id/id_m_radio_g"
+        android:layout_below="@id/text_m_9"
+        android:id="@+id/text_m_12"
+        android:layout_marginTop="15dp"
+        android:text=""/>
+    <!--==========================End Fourth row================================-->
+
+
+    <!--==========================  Start  Fifth row   ================================-->
+    <TextView
+        app:layout_widthPercent="15%"
+        app:layout_heightPercent="8%"
+        android:id="@+id/text_m_13"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/text_m_10"
+        android:text=""/>
+
+    <Button
+        app:layout_widthPercent="70%"
+        android:layout_height="wrap_content"
+        android:text="Tugatmoq"
+        android:layout_toRightOf="@id/text_m_13"
+        android:layout_below="@id/id_m_radio_g"
+        android:layout_marginTop="5dp"
+        android:onClick="Finish_m"
+        android:textAllCaps="false"/>
 
 </android.support.percent.PercentRelativeLayout>
