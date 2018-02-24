@@ -1,6 +1,7 @@
 package idoston.com.harftopish;
 
 import android.content.DialogInterface;
+import android.os.Handler;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -12,11 +13,13 @@ import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.util.Random;
+
 public class countries extends AppCompatActivity {
 
     private ImageView image;
     private RadioGroup radioGroup;
-    private RadioButton ani_1, ani_2, ani_3, ani_4;
+    private RadioButton con_1, con_2, con_3, con_4;
     private Button btn;
     private int random_question;
     private int random_position;
@@ -29,22 +32,78 @@ public class countries extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_countries);
 
-        image = (ImageView)findViewById(R.id.id_image);
+        image = (ImageView)findViewById(R.id.id_m_image);
 
-        radioGroup = (RadioGroup) findViewById(R.id.id_radio_g);
-        ani_1 = (RadioButton) findViewById(R.id.id_ani_1);
-        ani_2 = (RadioButton) findViewById(R.id.id_ani_2);
-        ani_3 = (RadioButton) findViewById(R.id.id_ani_3);
-        ani_4 = (RadioButton) findViewById(R.id.id_ani_4);
+        radioGroup = (RadioGroup) findViewById(R.id.id_m_radio_g);
+        con_1 = (RadioButton) findViewById(R.id.id_m_1);
+        con_2 = (RadioButton) findViewById(R.id.id_m_2);
+        con_3 = (RadioButton) findViewById(R.id.id_m_3);
+        con_4 = (RadioButton) findViewById(R.id.id_m_4);
 
-        scoring = (TextView) findViewById(R.id.text_d_1);
+        scoring = (TextView) findViewById(R.id.text_m_5);
 
         ChangeQuestion();
 
         getSupportActionBar().setDisplayShowHomeEnabled(true);
     }
     private void ChangeQuestion(){
+        final Handler handler = new Handler();
+        //IntialColors();
+        //Toast.makeText(getApplicationContext(),"Preparing game board!", Toast.LENGTH_LONG).show();
+        handler.postDelayed(new Runnable() {
+            @Override
+            public void run() {
 
+                random_position = getRandomForPosition();
+                random_question = getRandomForCountry();
+
+                scoring.setText("Ball: " + score);
+                con_1.setChecked(false);
+                con_2.setChecked(false);
+                con_3.setChecked(false);
+                con_4.setChecked(false);
+
+                if(random_position == 0){
+                    int id = getResources().getIdentifier("idoston.com.harftopish:drawable/" + Country.country_image[random_question], null, null);
+                    image.setImageResource(id);
+                    con_1.setText(Country.country_name[random_question]);
+                    con_2.setText(Country.country_name[getRandomForCountry()]);
+                    con_3.setText(Country.country_name[getRandomForCountry()]);
+                    con_4.setText(Country.country_name[getRandomForCountry()]);
+                }  else if ( random_position == 1){
+                    int id = getResources().getIdentifier("idoston.com.harftopish:drawable/" + Country.country_image[random_question], null, null);
+                    image.setImageResource(id);
+                    con_1.setText(Country.country_name[getRandomForCountry()]);
+                    con_2.setText(Country.country_name[random_question]);
+                    con_3.setText(Country.country_name[getRandomForCountry()]);
+                    con_4.setText(Country.country_name[getRandomForCountry()]);
+                } else if ( random_position == 2){
+                    int id = getResources().getIdentifier("idoston.com.harftopish:drawable/" + Country.country_image[random_question], null, null);
+                    image.setImageResource(id);
+                    con_1.setText(Country.country_name[getRandomForCountry()]);
+                    con_2.setText(Country.country_name[getRandomForCountry()]);
+                    con_3.setText(Country.country_name[random_question]);
+                    con_4.setText(Country.country_name[getRandomForCountry()]);
+                } else if (random_position == 3){
+                    int id = getResources().getIdentifier("idoston.com.harftopish:drawable/" + Country.country_image[random_question], null, null);
+                    image.setImageResource(id);
+                    con_1.setText(Country.country_name[getRandomForCountry()]);
+                    con_2.setText(Country.country_name[getRandomForCountry()]);
+                    con_3.setText(Country.country_name[getRandomForCountry()]);
+                    con_4.setText(Country.country_name[random_question]);
+                }
+            }
+        }, 3000);
+
+
+    }
+    private int getRandomForCountry(){
+        Random random = new Random();
+        return random.nextInt(66);
+    }
+    private int getRandomForPosition(){
+        Random random = new Random();
+        return random.nextInt(4);
     }
     public void Finish_m(View view){
         Exit_alert();

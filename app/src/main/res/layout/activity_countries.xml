@@ -151,7 +151,7 @@
             android:onClick="Check_m"
             android:text="Vinusuela"
             android:layout_marginTop="10dp"
-            android:id="@+id/id_ani_4"/>
+            android:id="@+id/id_m_4"/>
     </RadioGroup>
     <TextView
         app:layout_widthPercent="15%"
