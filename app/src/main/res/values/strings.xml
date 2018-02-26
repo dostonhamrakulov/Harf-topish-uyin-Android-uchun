@@ -3,8 +3,8 @@
     <string name="content">Hayvoni rasmi</string>
     <string name="question_uz">Rasmdagi hayvoni ismini Ingliz tilida toping!</string>
     <string name="question_en">Find the name of animal!</string>
-    <string name="info_en">The game is intended for children. Here, a child can try finding correct name of animals corresponding displayed animal image!</string>
-    <string name="info_uz">Bu o`yin bolalar uchun. Bu yerda, bola rasmdagi hayvoni ismini topishga harakat qiladi.</string>
+    <string name="info_en">Games. Here you need to find the name of country or animal corresdoing to image.</string>
+    <string name="info_uz">O`yin. Bu yerda siz rasmlarga qarab, mamlakat yoki hayvon nomini topishingiz kerak.</string>
     <string name="question_m_uz">Rasmga qarab, bu qaysi mamlakat bayrog`i ekani toping!</string>
 
     <string name="action_settings">Settings</string>
