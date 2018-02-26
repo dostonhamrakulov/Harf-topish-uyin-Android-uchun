@@ -9,13 +9,23 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity
-            android:name=".MainActivity"
-            android:label="Magic games">
+        <activity android:name=".MainActivity_0"
+            android:label="Magic Games">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="Magic games"
+            android:parentActivityName=".MainActivity_0">
+            <intent-filter>
+                <action android:name="idoston.com.harftopish.MainActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
         <activity
@@ -28,7 +38,8 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".countries"
+        <activity
+            android:name=".countries"
             android:label="Mamlakatlar"
             android:parentActivityName=".MainActivity">
             <intent-filter>
@@ -37,6 +48,7 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+
     </application>
 
 </manifest>

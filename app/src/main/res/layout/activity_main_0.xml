@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/app_background"
+    android:layout_height="match_parent"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    tools:context="idoston.com.harftopish.MainActivity_0">
+
+
+    <!--===================         Start First Row     ==================================-->
+
+    <TextView
+        app:layout_widthPercent="50%"
+        app:layout_heightPercent="5%"
+        android:layout_margin="5dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/text_welcome_1"
+        />
+    <TextView
+        app:layout_widthPercent="50%"
+        app:layout_heightPercent="5%"
+        android:layout_margin="5dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/text_welcome_1"
+        android:id="@+id/text_welcome_2"
+        />
+
+    <!--===================         End First Row     ==================================-->
+
+
+    <!--===================         Start Second Row     ==================================-->
+
+    <ImageView
+        app:layout_widthPercent="100%"
+        app:layout_heightPercent="30%"
+        android:layout_margin="5dp"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/text_welcome_3"
+        android:layout_below="@id/text_welcome_1"
+        android:src="@drawable/idoston"
+        />
+
+
+    <!--===================         End Second Row     ==================================-->
+
+
+    <!--===================         Start Third Row     ==================================-->
+
+    <ImageView
+        app:layout_widthPercent="50%"
+        app:layout_heightPercent="30%"
+        android:layout_margin="5dp"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/text_welcome_4"
+        android:layout_below="@id/text_welcome_3"
+        android:src="@drawable/uz"
+        android:text="One"/>
+    <ImageView
+        app:layout_widthPercent="50%"
+        app:layout_heightPercent="30%"
+        android:layout_margin="5dp"
+        android:layout_toRightOf="@id/text_welcome_4"
+        android:src="@drawable/us"
+        android:layout_below="@id/text_welcome_3"
+        android:id="@+id/text_welcome_5"
+
+        android:text="Two"/>
+
+    <!--===================         End Third Row     ==================================-->
+
+    <!--===================         Start Fourth Row     ==================================-->
+
+    <Button
+        app:layout_widthPercent="50%"
+        app:layout_heightPercent="10%"
+        android:layout_margin="5dp"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/text_welcome_6"
+        android:layout_below="@id/text_welcome_4"
+        android:onClick="Move_uz"
+        android:text="O`zbekcha"
+        android:textAllCaps="false"/>
+    <Button
+        app:layout_widthPercent="50%"
+        app:layout_heightPercent="10%"
+        android:layout_margin="5dp"
+        android:onClick="Move_en"
+        android:layout_toRightOf="@id/text_welcome_6"
+        android:textAllCaps="false"
+        android:layout_below="@id/text_welcome_5"
+        android:text="English"/>
+
+    <!--===================         End Third Row     ==================================-->
+
+</android.support.percent.PercentRelativeLayout>
