@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,46 +7,131 @@
     android:background="@color/app_background"
     tools:context="idoston.com.harftopish.MainActivity">
 
+
+    <!--====================Start First row========================-->
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Information"
-        android:id="@+id/info"/>
+        app:layout_widthPercent="15%"
+        app:layout_heightPercent="10%"
+        android:id="@+id/text_uzversion_1"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentTop="true"
+        android:text=""/>
+    <TextView
+        app:layout_widthPercent="70%"
+        android:layout_toRightOf="@id/text_uzversion_1"
+        app:layout_heightPercent="10%"
+        android:background="@color/app_back_white"
+        android:layout_marginTop="5dp"
+        android:id="@+id/text_uzversion_2"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:text="@string/question_m_uz"/>
+    <TextView
+        app:layout_widthPercent="15%"
+        app:layout_heightPercent="10%"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/text_uzversion_2"
+        android:id="@+id/text_uzversion_3"
+        android:textAlignment="center"
+        android:text=""/>
+    <!--====================   End First row    ========================-->
+
+    <!--====================    Start Second row    ========================-->
+    <TextView
+        app:layout_widthPercent="15%"
+        app:layout_heightPercent="40%"
+        android:id="@+id/text_uzversion_4"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/text_uzversion_1"
+        android:text=""/>
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        app:layout_widthPercent="70%"
+        app:layout_heightPercent="40%"
+        android:layout_below="@id/text_uzversion_2"
+        android:background="@color/app_back_white"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/text_uzversion_4"
+        android:id="@+id/text_uzversion_5"
+        android:src="@drawable/idoston"
         />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingLeft="25sp"
-        android:paddingRight="25sp"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"
-        android:orientation="vertical">
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Hayvonlar"
-            android:onClick="Start_game"
-            android:textAllCaps="false"/>
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Mamlakatlar"
-            android:onClick="Start_countries"
-            android:textAllCaps="false"/>
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Oldingi natijalar"
-            android:textAllCaps="false"/>
-        <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Chiqish"
-            android:onClick="Finishing_main"
-        android:textAllCaps="false"/>
-    </LinearLayout>
-</RelativeLayout>
+    <TextView
+        app:layout_widthPercent="15%"
+        app:layout_heightPercent="40%"
+        android:layout_toRightOf="@id/text_uzversion_5"
+        android:layout_below="@id/text_uzversion_3"
+        android:id="@+id/text_uzversion_6"
+        android:layout_marginTop="10dp"
+        android:text=""/>
+
+    <!--====================    End Second row    ========================-->
+
+    <!--====================    Start Third row    ========================-->
+    <TextView
+        app:layout_widthPercent="15%"
+        app:layout_heightPercent="10%"
+        android:id="@+id/text_uzversion_7"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/text_uzversion_4"
+        android:text=""/>
+    <Button
+        app:layout_widthPercent="70%"
+        app:layout_heightPercent="10%"
+        android:layout_below="@id/text_uzversion_5"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/text_uzversion_7"
+        android:id="@+id/text_uzversion_8"
+        android:textAllCaps="false"
+        android:onClick="Start_game"
+        android:text="Hayvonlar"
+        android:textAlignment="center"
+        />
+    <TextView
+        app:layout_widthPercent="15%"
+        app:layout_heightPercent="10%"
+        android:layout_toRightOf="@id/text_uzversion_8"
+        android:layout_below="@id/text_uzversion_6"
+        android:id="@+id/text_uzversion_9"
+        android:layout_marginTop="10dp"
+        android:text=""/>
+
+    <!--====================    End Third row    ========================-->
+
+    <!--====================    Start Fourth row    ========================-->
+    <TextView
+        app:layout_widthPercent="15%"
+        app:layout_heightPercent="10%"
+        android:id="@+id/text_uzversion_10"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/text_uzversion_7"
+        android:text=""/>
+    <Button
+        app:layout_widthPercent="70%"
+        app:layout_heightPercent="10%"
+        android:layout_below="@id/text_uzversion_8"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/text_uzversion_10"
+        android:id="@+id/text_uzversion_11"
+        android:onClick="Start_countries"
+        android:textAllCaps="false"
+        android:text="Mamlakatlar"
+        android:textAlignment="center"
+        />
+    <TextView
+        app:layout_widthPercent="15%"
+        app:layout_heightPercent="10%"
+        android:layout_toRightOf="@id/text_uzversion_11"
+        android:layout_below="@id/text_uzversion_9"
+        android:id="@+id/text_uzversion_12"
+        android:layout_marginTop="10dp"
+        android:text=""/>
+
+    <!--====================    End Fourth row    ========================-->
+
+</android.support.percent.PercentRelativeLayout>
