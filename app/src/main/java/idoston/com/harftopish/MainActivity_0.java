@@ -16,6 +16,6 @@ public class MainActivity_0 extends AppCompatActivity {
         startActivity(new Intent(MainActivity_0.this, MainActivity.class));
     }
     public void Move_en(View view){
-        startActivity(new Intent(MainActivity_0.this, MainActivity.class));
+        startActivity(new Intent(MainActivity_0.this, StartGameEn.class));
     }
 }
