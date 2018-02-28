@@ -1,9 +1,185 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="idoston.com.harftopish.AnimalEn">
 
-</android.support.constraint.ConstraintLayout>
+    <!--====================Zero row========================-->
+    <TextView
+        app:layout_widthPercent="10%"
+        app:layout_heightPercent="15%"
+        android:id="@+id/text1_en"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentTop="true"
+        android:text=""/>
+    <TextView
+        app:layout_widthPercent="80%"
+        android:layout_toRightOf="@id/text1_en"
+        app:layout_heightPercent="15%"
+        android:background="@color/app_back_white"
+        android:layout_marginTop="5dp"
+        android:id="@+id/info1_en"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:text="@string/info_uz"/>
+    <TextView
+        app:layout_widthPercent="10%"
+        app:layout_heightPercent="15%"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/info1_en"
+        android:id="@+id/text_2_en"
+        android:textAlignment="center"
+        android:text=""/>
+
+    <!--====================First row========================-->
+
+    <TextView
+        app:layout_widthPercent="10%"
+        app:layout_heightPercent="7%"
+        android:id="@+id/text_3_1_en"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/text1_en"
+        android:text=""/>
+    <TextView
+        app:layout_widthPercent="80%"
+        app:layout_heightPercent="7%"
+        android:layout_below="@id/info1_en"
+        android:background="@color/app_back_white"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/text_3_1_en"
+        android:id="@+id/text_d_1_en"
+        android:text="Ball: 0"
+        android:textSize="25dp"
+        android:textAlignment="center"
+        android:contentDescription="@string/content"
+        />
+    <TextView
+        app:layout_widthPercent="10%"
+        app:layout_heightPercent="7%"
+        android:layout_toRightOf="@id/text_d_1_en"
+        android:layout_below="@id/text_2_en"
+        android:id="@+id/text_4_1_en"
+        android:layout_marginTop="10dp"
+        android:text=""/>
+
+
+    <!--====================Second row========================-->
+    <TextView
+        app:layout_widthPercent="10%"
+        app:layout_heightPercent="31%"
+        android:id="@+id/text_3_en"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/text_3_1_en"
+        android:text=""/>
+    <ImageView
+        app:layout_widthPercent="80%"
+        app:layout_heightPercent="31%"
+        android:layout_below="@id/text_d_1_en"
+        android:background="@color/app_back_white"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/text_3_en"
+        android:src="@drawable/elephant"
+        android:id="@+id/id_image_en"
+        android:contentDescription="@string/content"
+        />
+    <TextView
+        app:layout_widthPercent="10%"
+        app:layout_heightPercent="31%"
+        android:layout_toRightOf="@id/id_image_en"
+        android:layout_below="@id/text_4_1_en"
+        android:id="@+id/text_4_en"
+        android:layout_marginTop="10dp"
+        android:text=""/>
+
+    <!--==========================Third row================================-->
+
+
+    <TextView
+        app:layout_widthPercent="10%"
+        app:layout_heightPercent="30%"
+        android:id="@+id/text_5_en"
+        android:layout_marginTop="15dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/text_3_en"
+        android:text=""/>
+
+    <RadioGroup
+        android:background="@color/app_back_white"
+        app:layout_widthPercent="80%"
+        android:id="@+id/id_radio_g_en"
+        android:layout_toRightOf="@id/text_5_en"
+        android:layout_below="@id/id_image_en"
+        android:layout_marginTop="15dp"
+        app:layout_heightPercent="30%"
+        >
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="Check_ani"
+            android:text="Elephant"
+            android:layout_marginTop="10dp"
+            android:id="@+id/id_ani_1_en"/>
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="Check_ani"
+            android:text="Cat"
+            android:layout_marginTop="10dp"
+            android:id="@+id/id_ani_2_en"/>
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="Check_ani"
+            android:text="Wolf"
+            android:layout_marginTop="10dp"
+            android:id="@+id/id_ani_3_en"/>
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="Check_ani"
+            android:text="Dinosaur"
+            android:layout_marginTop="10dp"
+            android:id="@+id/id_ani_4_en"/>
+    </RadioGroup>
+    <TextView
+        app:layout_widthPercent="10%"
+        app:layout_heightPercent="30%"
+        android:layout_toRightOf="@id/id_radio_g_en"
+        android:layout_below="@id/text_4_en"
+        android:id="@+id/text_6_en"
+        android:layout_marginTop="15dp"
+        android:text=""/>
+    <!--==========================Third row================================-->
+
+
+
+    <TextView
+        app:layout_widthPercent="10%"
+        app:layout_heightPercent="8%"
+        android:id="@+id/text_7_en"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/text_5_en"
+        android:text=""/>
+
+    <Button
+        app:layout_widthPercent="80%"
+        android:layout_height="wrap_content"
+        android:text="Tugatmoq"
+        android:layout_toRightOf="@id/text_7_en"
+        android:layout_below="@id/id_radio_g_en"
+        android:id="@+id/id_btn_finish_en"
+        android:layout_marginTop="5dp"
+        android:onClick="Finishing_animal"
+        android:textAllCaps="false"/>
+
+</android.support.percent.PercentRelativeLayout>

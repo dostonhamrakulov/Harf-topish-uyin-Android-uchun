@@ -52,7 +52,7 @@ public class StartGame extends AppCompatActivity {
 
         getSupportActionBar().setDisplayShowHomeEnabled(true);
     }
-    public void Check(View view){
+    public void Check_ani(View view){
 
         switch(view.getId()){
             case R.id.id_ani_1:
