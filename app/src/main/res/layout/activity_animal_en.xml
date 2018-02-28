@@ -23,7 +23,7 @@
         android:id="@+id/info1_en"
         android:textAlignment="center"
         android:textSize="20dp"
-        android:text="@string/info_uz"/>
+        android:text="@string/question_en"/>
     <TextView
         app:layout_widthPercent="10%"
         app:layout_heightPercent="15%"
@@ -52,7 +52,7 @@
         android:layout_marginTop="10dp"
         android:layout_toRightOf="@id/text_3_1_en"
         android:id="@+id/text_d_1_en"
-        android:text="Ball: 0"
+        android:text="Score: 0"
         android:textSize="25dp"
         android:textAlignment="center"
         android:contentDescription="@string/content"
@@ -174,7 +174,7 @@
     <Button
         app:layout_widthPercent="80%"
         android:layout_height="wrap_content"
-        android:text="Tugatmoq"
+        android:text="Finish"
         android:layout_toRightOf="@id/text_7_en"
         android:layout_below="@id/id_radio_g_en"
         android:id="@+id/id_btn_finish_en"

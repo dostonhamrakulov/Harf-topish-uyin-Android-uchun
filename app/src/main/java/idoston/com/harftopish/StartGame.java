@@ -190,7 +190,7 @@ public class StartGame extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
-    public void Exit_alert(){
+    private void Exit_alert(){
         AlertDialog.Builder alert_builder = new AlertDialog.Builder(this);
         alert_builder.setMessage("O`yinni tugatishni xoxlaysizmi?")
                 .setCancelable(false)

@@ -61,37 +61,37 @@ public class AnimalEn extends AppCompatActivity {
         switch(view.getId()){
             case R.id.id_ani_1_en:
                 if (ani_1.getText().toString() == Animals.Animal[random_question]){
-                    Toast.makeText(AnimalEn.this, "To`g`ri", Toast.LENGTH_LONG).show();
+                    Toast.makeText(AnimalEn.this, "Correct", Toast.LENGTH_LONG).show();
                     score = score + 1;
                 } else {
-                    Toast.makeText(AnimalEn.this, "Noto`g`ri. J: " + Animals.Animal[random_question], Toast.LENGTH_LONG).show();
+                    Toast.makeText(AnimalEn.this, "Incorreect. Ans: " + Animals.Animal[random_question], Toast.LENGTH_LONG).show();
                 }
                 ChangeQuestion();
                 break;
             case R.id.id_ani_2_en:
                 if (ani_2.getText().toString() == Animals.Animal[random_question]){
-                    Toast.makeText(AnimalEn.this, "To`g`ri", Toast.LENGTH_LONG).show();
+                    Toast.makeText(AnimalEn.this, "Correct", Toast.LENGTH_LONG).show();
                     score = score + 1;
                 } else {
-                    Toast.makeText(AnimalEn.this, "Noto`g`ri. J: " + Animals.Animal[random_question], Toast.LENGTH_LONG).show();
+                    Toast.makeText(AnimalEn.this, "Incorreect. Ans: " + Animals.Animal[random_question], Toast.LENGTH_LONG).show();
                 }
                 ChangeQuestion();
                 break;
             case R.id.id_ani_3_en:
                 if (ani_3.getText().toString() == Animals.Animal[random_question]){
-                    Toast.makeText(AnimalEn.this, "To`g`ri", Toast.LENGTH_LONG).show();
+                    Toast.makeText(AnimalEn.this, "Correct", Toast.LENGTH_LONG).show();
                     score = score + 1;
                 } else {
-                    Toast.makeText(AnimalEn.this, "Noto`g`ri. J: " + Animals.Animal[random_question], Toast.LENGTH_LONG).show();
+                    Toast.makeText(AnimalEn.this, "Incorreect. Ans: " + Animals.Animal[random_question], Toast.LENGTH_LONG).show();
                 }
                 ChangeQuestion();
                 break;
             case R.id.id_ani_4_en:
                 if (ani_4.getText().toString() == Animals.Animal[random_question]){
-                    Toast.makeText(AnimalEn.this, "To`g`ri", Toast.LENGTH_LONG).show();
+                    Toast.makeText(AnimalEn.this, "Correct", Toast.LENGTH_LONG).show();
                     score = score + 1;
                 } else {
-                    Toast.makeText(AnimalEn.this, "Noto`g`ri. J: " + Animals.Animal[random_question], Toast.LENGTH_LONG).show();
+                    Toast.makeText(AnimalEn.this, "Incorreect. Ans: " + Animals.Animal[random_question], Toast.LENGTH_LONG).show();
                 }
                 ChangeQuestion();
                 break;
@@ -110,7 +110,7 @@ public class AnimalEn extends AppCompatActivity {
                 random_position = getRandomForPosition();
                 random_question = getRandomForAnimal();
 
-                scoring.setText("Ball: " + score);
+                scoring.setText("Score: " + score);
                 ani_1.setChecked(false);
                 ani_2.setChecked(false);
                 ani_3.setChecked(false);
@@ -195,20 +195,20 @@ public class AnimalEn extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
-    public void Exit_alert(){
+    private void Exit_alert(){
         AlertDialog.Builder alert_builder = new AlertDialog.Builder(this);
-        alert_builder.setMessage("O`yinni tugatishni xoxlaysizmi?")
+        alert_builder.setMessage("Would you like to exit?")
                 .setCancelable(false)
-                .setPositiveButton("Ha", new DialogInterface.OnClickListener() {
+                .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
-                        Toast.makeText(AnimalEn.this, "Xayr!", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(AnimalEn.this, "Bye!", Toast.LENGTH_SHORT).show();
                         moveTaskToBack(true);
                         android.os.Process.killProcess(android.os.Process.myPid());
                         System.exit(1);
                     }
                 })
-                .setNegativeButton("Yo`q", new DialogInterface.OnClickListener() {
+                .setNegativeButton("No", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
                         dialogInterface.cancel();
@@ -216,7 +216,7 @@ public class AnimalEn extends AppCompatActivity {
                 });
 
         AlertDialog alert = alert_builder.create();
-        alert.setTitle("Tasdiqlang");
+        alert.setTitle("Warning!");
         alert.show();
     }
     private void Name(){

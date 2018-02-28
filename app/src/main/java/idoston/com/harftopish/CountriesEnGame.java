@@ -56,37 +56,37 @@ public class CountriesEnGame extends AppCompatActivity {
         switch(view.getId()){
             case R.id.id_m_1_en:
                 if (con_1.getText().toString() == Country.country_name[random_question]){
-                    Toast.makeText(CountriesEnGame.this, "To`g`ri", Toast.LENGTH_LONG).show();
+                    Toast.makeText(CountriesEnGame.this, "Correct", Toast.LENGTH_LONG).show();
                     score = score + 1;
                 } else {
-                    Toast.makeText(CountriesEnGame.this, "Noto`g`ri. J: " + Country.country_name[random_question], Toast.LENGTH_LONG).show();
+                    Toast.makeText(CountriesEnGame.this, "Incorrect. Ans: " + Country.country_name[random_question], Toast.LENGTH_LONG).show();
                 }
                 ChangeQuestion();
                 break;
             case R.id.id_m_2_en:
                 if (con_2.getText().toString() == Country.country_name[random_question]){
-                    Toast.makeText(CountriesEnGame.this, "To`g`ri", Toast.LENGTH_LONG).show();
+                    Toast.makeText(CountriesEnGame.this, "Correct", Toast.LENGTH_LONG).show();
                     score = score + 1;
                 } else {
-                    Toast.makeText(CountriesEnGame.this, "Noto`g`ri. J: " + Country.country_name[random_question], Toast.LENGTH_LONG).show();
+                    Toast.makeText(CountriesEnGame.this, "Incorrect. Ans: " + Country.country_name[random_question], Toast.LENGTH_LONG).show();
                 }
                 ChangeQuestion();
                 break;
             case R.id.id_m_3_en:
                 if (con_3.getText().toString() == Country.country_name[random_question]){
-                    Toast.makeText(CountriesEnGame.this, "To`g`ri", Toast.LENGTH_LONG).show();
+                    Toast.makeText(CountriesEnGame.this, "Correct", Toast.LENGTH_LONG).show();
                     score = score + 1;
                 } else {
-                    Toast.makeText(CountriesEnGame.this, "Noto`g`ri. J: " + Country.country_name[random_question], Toast.LENGTH_LONG).show();
+                    Toast.makeText(CountriesEnGame.this, "Incorrect. Ans: " + Country.country_name[random_question], Toast.LENGTH_LONG).show();
                 }
                 ChangeQuestion();
                 break;
             case R.id.id_m_4_en:
                 if (con_4.getText().toString() == Country.country_name[random_question]){
-                    Toast.makeText(CountriesEnGame.this, "To`g`ri", Toast.LENGTH_LONG).show();
+                    Toast.makeText(CountriesEnGame.this, "Correct", Toast.LENGTH_LONG).show();
                     score = score + 1;
                 } else {
-                    Toast.makeText(CountriesEnGame.this, "Noto`g`ri. J: " + Country.country_name[random_question], Toast.LENGTH_LONG).show();
+                    Toast.makeText(CountriesEnGame.this, "Incorrect. Ans: " + Country.country_name[random_question], Toast.LENGTH_LONG).show();
                 }
                 ChangeQuestion();
                 break;
@@ -104,7 +104,7 @@ public class CountriesEnGame extends AppCompatActivity {
                 random_position = getRandomForPosition();
                 random_question = getRandomForCountry();
 
-                scoring.setText("Ball: " + score);
+                scoring.setText("Score: " + score);
                 con_1.setChecked(false);
                 con_2.setChecked(false);
                 con_3.setChecked(false);
@@ -155,20 +155,20 @@ public class CountriesEnGame extends AppCompatActivity {
     public void Finish_m_en(View view){
         Exit_alert();
     }
-    public void Exit_alert(){
+    private void Exit_alert(){
         AlertDialog.Builder alert_builder = new AlertDialog.Builder(this);
-        alert_builder.setMessage("O`yinni tugatishni xoxlaysizmi?")
+        alert_builder.setMessage("Would you like to exit?")
                 .setCancelable(false)
-                .setPositiveButton("Ha", new DialogInterface.OnClickListener() {
+                .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
-                        Toast.makeText(CountriesEnGame.this, "Xayr!", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(CountriesEnGame.this, "Bye!", Toast.LENGTH_SHORT).show();
                         moveTaskToBack(true);
                         android.os.Process.killProcess(android.os.Process.myPid());
                         System.exit(1);
                     }
                 })
-                .setNegativeButton("Yo`q", new DialogInterface.OnClickListener() {
+                .setNegativeButton("No", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
                         dialogInterface.cancel();
@@ -176,7 +176,7 @@ public class CountriesEnGame extends AppCompatActivity {
                 });
 
         AlertDialog alert = alert_builder.create();
-        alert.setTitle("Tasdiqlang");
+        alert.setTitle("Warning!");
         alert.show();
     }
     @Override

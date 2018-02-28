@@ -6,6 +6,7 @@
     <string name="info_en">Games. Here you need to find the name of country or animal corresdoing to image.</string>
     <string name="info_uz">O`yin. Bu yerda siz rasmlarga qarab, mamlakat yoki hayvon nomini topishingiz kerak.</string>
     <string name="question_m_uz">Rasmga qarab, bu qaysi mamlakat bayrog`i ekani toping!</string>
+    <string name="question_m_en">Find the name of country!</string>
 
     <string name="action_settings">Settings</string>
     <string name="action_contactus">Contact Us</string>
