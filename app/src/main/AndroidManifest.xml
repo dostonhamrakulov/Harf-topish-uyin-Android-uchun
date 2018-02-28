@@ -48,9 +48,33 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".StartGameEn" />
-        <activity android:name=".AnimalEn" />
-        <activity android:name=".CountriesEnGame"></activity>
+        <activity android:name=".StartGameEn"
+            android:parentActivityName=".MainActivity_0"
+            android:label="Magic Games">
+            <intent-filter>
+                <action android:name="idoston.com.harftopish.StartGameEn" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".AnimalEn"
+            android:parentActivityName=".StartGameEn"
+            android:label="Magic Games">
+            <intent-filter>
+                <action android:name="idoston.com.harftopish.AnimalEn" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".CountriesEnGame"
+            android:parentActivityName=".CountriesEnGame"
+            android:label="Magic Games">
+            <intent-filter>
+                <action android:name="idoston.com.harftopish.AnimalEn" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

@@ -8,16 +8,16 @@
 
     <!--====================Start First row========================-->
     <TextView
-        app:layout_widthPercent="15%"
-        app:layout_heightPercent="10%"
+        app:layout_widthPercent="10%"
+        app:layout_heightPercent="17%"
         android:id="@+id/text_uzversion_1"
         android:layout_marginTop="5dp"
         android:layout_alignParentTop="true"
         android:text=""/>
     <TextView
-        app:layout_widthPercent="70%"
+        app:layout_widthPercent="80%"
         android:layout_toRightOf="@id/text_uzversion_1"
-        app:layout_heightPercent="10%"
+        app:layout_heightPercent="17%"
         android:background="@color/app_back_white"
         android:layout_marginTop="5dp"
         android:id="@+id/text_uzversion_2"
@@ -25,8 +25,8 @@
         android:textSize="20dp"
         android:text="@string/info_en"/>
     <TextView
-        app:layout_widthPercent="15%"
-        app:layout_heightPercent="10%"
+        app:layout_widthPercent="10%"
+        app:layout_heightPercent="17%"
         android:layout_marginTop="5dp"
         android:layout_toRightOf="@id/text_uzversion_2"
         android:id="@+id/text_uzversion_3"
@@ -36,7 +36,7 @@
 
     <!--====================    Start Second row    ========================-->
     <TextView
-        app:layout_widthPercent="15%"
+        app:layout_widthPercent="10%"
         app:layout_heightPercent="40%"
         android:id="@+id/text_uzversion_4"
         android:layout_marginTop="10dp"
@@ -45,7 +45,7 @@
         android:layout_below="@id/text_uzversion_1"
         android:text=""/>
     <ImageView
-        app:layout_widthPercent="70%"
+        app:layout_widthPercent="80%"
         app:layout_heightPercent="40%"
         android:layout_below="@id/text_uzversion_2"
         android:background="@color/app_back_white"
@@ -56,7 +56,7 @@
         />
 
     <TextView
-        app:layout_widthPercent="15%"
+        app:layout_widthPercent="10%"
         app:layout_heightPercent="40%"
         android:layout_toRightOf="@id/text_uzversion_5"
         android:layout_below="@id/text_uzversion_3"
@@ -68,7 +68,7 @@
 
     <!--====================    Start Third row    ========================-->
     <TextView
-        app:layout_widthPercent="15%"
+        app:layout_widthPercent="10%"
         app:layout_heightPercent="10%"
         android:id="@+id/text_uzversion_7"
         android:layout_marginTop="10dp"
@@ -77,7 +77,7 @@
         android:layout_below="@id/text_uzversion_4"
         android:text=""/>
     <Button
-        app:layout_widthPercent="70%"
+        app:layout_widthPercent="80%"
         app:layout_heightPercent="10%"
         android:layout_below="@id/text_uzversion_5"
         android:layout_marginTop="10dp"
@@ -89,7 +89,7 @@
         android:textAlignment="center"
         />
     <TextView
-        app:layout_widthPercent="15%"
+        app:layout_widthPercent="10%"
         app:layout_heightPercent="10%"
         android:layout_toRightOf="@id/text_uzversion_8"
         android:layout_below="@id/text_uzversion_6"
@@ -101,7 +101,7 @@
 
     <!--====================    Start Fourth row    ========================-->
     <TextView
-        app:layout_widthPercent="15%"
+        app:layout_widthPercent="10%"
         app:layout_heightPercent="10%"
         android:id="@+id/text_uzversion_10"
         android:layout_marginTop="10dp"
@@ -110,7 +110,7 @@
         android:layout_below="@id/text_uzversion_7"
         android:text=""/>
     <Button
-        app:layout_widthPercent="70%"
+        app:layout_widthPercent="80%"
         app:layout_heightPercent="10%"
         android:layout_below="@id/text_uzversion_8"
         android:layout_marginTop="10dp"
@@ -122,7 +122,7 @@
         android:textAlignment="center"
         />
     <TextView
-        app:layout_widthPercent="15%"
+        app:layout_widthPercent="10%"
         app:layout_heightPercent="10%"
         android:layout_toRightOf="@id/text_uzversion_11"
         android:layout_below="@id/text_uzversion_9"
