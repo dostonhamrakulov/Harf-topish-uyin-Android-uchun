@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/app_background"
     tools:context="idoston.com.harftopish.StartGameEn">
 
     <!--====================Start First row========================-->
@@ -11,7 +12,7 @@
         app:layout_widthPercent="10%"
         app:layout_heightPercent="17%"
         android:id="@+id/text_uzversion_1"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="25dp"
         android:layout_alignParentTop="true"
         android:text=""/>
     <TextView
@@ -19,7 +20,7 @@
         android:layout_toRightOf="@id/text_uzversion_1"
         app:layout_heightPercent="17%"
         android:background="@color/app_back_white"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="25dp"
         android:id="@+id/text_uzversion_2"
         android:textAlignment="center"
         android:textSize="20dp"
@@ -27,7 +28,7 @@
     <TextView
         app:layout_widthPercent="10%"
         app:layout_heightPercent="17%"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="25dp"
         android:layout_toRightOf="@id/text_uzversion_2"
         android:id="@+id/text_uzversion_3"
         android:textAlignment="center"
@@ -86,6 +87,7 @@
         android:textAllCaps="false"
         android:onClick="Move_animals_en"
         android:text="Animals"
+        android:background="@color/button"
         android:textAlignment="center"
         />
     <TextView
@@ -113,6 +115,7 @@
         app:layout_widthPercent="80%"
         app:layout_heightPercent="10%"
         android:layout_below="@id/text_uzversion_8"
+        android:background="@color/button"
         android:layout_marginTop="10dp"
         android:layout_toRightOf="@id/text_uzversion_10"
         android:id="@+id/text_uzversion_11"

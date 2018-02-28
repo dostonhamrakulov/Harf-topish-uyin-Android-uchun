@@ -40,6 +40,7 @@
         android:layout_margin="5dp"
         android:layout_alignParentLeft="true"
         android:id="@+id/text_welcome_3"
+        android:background="@color/app_back_white"
         android:layout_below="@id/text_welcome_1"
         android:src="@drawable/idoston"
         />

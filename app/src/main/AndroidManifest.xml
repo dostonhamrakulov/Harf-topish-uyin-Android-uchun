@@ -20,7 +20,7 @@
         </activity>
         <activity
             android:name=".MainActivity"
-            android:label="Magic games"
+            android:label="Magic Games"
             android:parentActivityName=".MainActivity_0">
             <intent-filter>
                 <action android:name="idoston.com.harftopish.MainActivity" />
@@ -30,7 +30,7 @@
         </activity>
         <activity
             android:name=".StartGame"
-            android:label="O`yinlar"
+            android:label="Magic Games"
             android:parentActivityName=".MainActivity">
             <intent-filter>
                 <action android:name="idoston.com.harftopish.StartGame" />
@@ -40,7 +40,7 @@
         </activity>
         <activity
             android:name=".countries"
-            android:label="Mamlakatlar"
+            android:label="Magic Games"
             android:parentActivityName=".MainActivity">
             <intent-filter>
                 <action android:name="idoston.com.harftopish.StartGame" />

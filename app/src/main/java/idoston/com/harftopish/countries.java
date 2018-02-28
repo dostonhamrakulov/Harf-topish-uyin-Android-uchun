@@ -177,7 +177,7 @@ public class countries extends AppCompatActivity {
         //noinspection SimplifiableIfStatement
         if (id == R.id.id_changing_language) {
             Toast.makeText(countries.this, "Moving to English version", Toast.LENGTH_LONG).show();
-            startActivity(new Intent(StartGame.this, StartGameEn.class));
+            startActivity(new Intent(countries.this, StartGameEn.class));
             return true;
         }
         switch(id){
