@@ -122,28 +122,28 @@
         <RadioButton
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="Check"
+            android:onClick="Check_ani"
             android:text="Elephant"
             android:layout_marginTop="10dp"
             android:id="@+id/id_ani_1"/>
         <RadioButton
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="Check"
+            android:onClick="Check_ani"
             android:text="Cat"
             android:layout_marginTop="10dp"
             android:id="@+id/id_ani_2"/>
         <RadioButton
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="Check"
+            android:onClick="Check_ani"
             android:text="Wolf"
             android:layout_marginTop="10dp"
             android:id="@+id/id_ani_3"/>
         <RadioButton
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="Check"
+            android:onClick="Check_ani"
             android:text="Dinosaur"
             android:layout_marginTop="10dp"
             android:id="@+id/id_ani_4"/>

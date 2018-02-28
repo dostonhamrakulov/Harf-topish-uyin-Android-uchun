@@ -3,6 +3,7 @@ package idoston.com.harftopish;
  *   Created by Doston Hamrakulov 18.02.2018
  */
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Handler;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
@@ -177,6 +178,7 @@ public class StartGame extends AppCompatActivity {
         //noinspection SimplifiableIfStatement
         if (id == R.id.id_changing_language) {
             Toast.makeText(StartGame.this, "Moving to English version", Toast.LENGTH_LONG).show();
+            startActivity(new Intent(StartGame.this, StartGameEn.class));
             return true;
         }
         switch(id){
