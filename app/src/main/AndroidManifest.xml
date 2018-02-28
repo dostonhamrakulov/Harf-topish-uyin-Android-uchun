@@ -48,7 +48,9 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".StartGameEn"></activity>
+        <activity android:name=".StartGameEn" />
+        <activity android:name=".AnimalEn" />
+        <activity android:name=".CountriesEnGame"></activity>
     </application>
 
 </manifest>

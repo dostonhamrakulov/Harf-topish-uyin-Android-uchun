@@ -84,8 +84,8 @@
         android:layout_toRightOf="@id/text_uzversion_7"
         android:id="@+id/text_uzversion_8"
         android:textAllCaps="false"
-        android:onClick="Start_game"
-        android:text="Hayvonlar"
+        android:onClick="Move_animals_en"
+        android:text="Animals"
         android:textAlignment="center"
         />
     <TextView
@@ -116,9 +116,9 @@
         android:layout_marginTop="10dp"
         android:layout_toRightOf="@id/text_uzversion_10"
         android:id="@+id/text_uzversion_11"
-        android:onClick="Start_countries"
+        android:onClick="Move_countries_en"
         android:textAllCaps="false"
-        android:text="Mamlakatlar"
+        android:text="Countries"
         android:textAlignment="center"
         />
     <TextView
