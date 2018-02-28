@@ -1,6 +1,8 @@
 # Doston Hamrakulov
 
 ## Harf topish o`yini
+
+## Magic Games
 ### Application domain  
 This is game which uses logic in game. 
 
@@ -20,7 +22,7 @@ This is game which uses logic in game.
 
 ## Google Play Store
 
-<a href="https://play.google.com/store/search?q=doston%20hamrakulov">Magic Games in One</a>
+<a href="https://play.google.com/store/apps/details?id=idoston.com.harftopish">Magic Games in One</a>
 
 
 ### Screens:

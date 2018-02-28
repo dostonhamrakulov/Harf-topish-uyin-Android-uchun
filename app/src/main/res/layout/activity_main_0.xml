@@ -57,6 +57,7 @@
         android:layout_margin="5dp"
         android:layout_alignParentLeft="true"
         android:id="@+id/text_welcome_4"
+
         android:layout_below="@id/text_welcome_3"
         android:src="@drawable/uz"
         android:text="One"/>
