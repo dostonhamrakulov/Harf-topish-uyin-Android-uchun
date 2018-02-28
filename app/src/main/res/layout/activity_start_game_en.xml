@@ -87,7 +87,6 @@
         android:textAllCaps="false"
         android:onClick="Move_animals_en"
         android:text="Animals"
-        android:background="@color/button"
         android:textAlignment="center"
         />
     <TextView
@@ -115,7 +114,6 @@
         app:layout_widthPercent="80%"
         app:layout_heightPercent="10%"
         android:layout_below="@id/text_uzversion_8"
-        android:background="@color/button"
         android:layout_marginTop="10dp"
         android:layout_toRightOf="@id/text_uzversion_10"
         android:id="@+id/text_uzversion_11"

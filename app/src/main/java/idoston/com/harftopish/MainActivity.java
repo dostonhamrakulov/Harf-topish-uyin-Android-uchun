@@ -59,6 +59,7 @@ public class MainActivity extends AppCompatActivity {
         //noinspection SimplifiableIfStatement
         if (id == R.id.id_changing_language) {
             Toast.makeText(MainActivity.this, "Moving to English version", Toast.LENGTH_LONG).show();
+            startActivity(new Intent(MainActivity.this, StartGameEn.class));
             return true;
         }
         switch(id){

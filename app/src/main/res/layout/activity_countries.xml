@@ -185,7 +185,6 @@
         android:layout_below="@id/id_m_radio_g"
         android:layout_marginTop="5dp"
         android:onClick="Finish_m"
-        android:background="@color/button"
         android:textAllCaps="false"/>
 
 </android.support.percent.PercentRelativeLayout>
