@@ -17,8 +17,12 @@ This is game which uses logic in game and it uses algorithms to defeat you, at t
 ```
 
 ## Author
-**Doston Hamrakulov**
+```[Doston Hamrakulov]
+Doston Hamrakulov
+```
+
 >*Riga Technical University, Riga, Latvia*
+
 >*Technical University of Chemnitz, Chemnitz, Germany*
 
 >*Self-employement, employement*
