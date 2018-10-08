@@ -1,8 +1,6 @@
 # Doston Hamrakulov
 
-## Harf topish o`yini
-
-## Magic Games
+## Magic Games - Harf topish o`yini
 ### Application domain  
 This is game which uses logic in game and it uses algorithms to defeat you, at the same time it will try to win. It is educational game, helping you memorise or find country/animal by showing its flag/pictures. You can download it and play it.
 
