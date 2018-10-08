@@ -4,7 +4,7 @@
 
 ## Magic Games
 ### Application domain  
-This is game which uses logic in game. 
+This is game which uses logic in game and it uses algorithms to defeat you, at the same time it will try to win. It is educational game, helping you memorise or find country/animal by showing its flag/pictures. You can download it and play it.
 
 ### Programming language
 ```[java]
@@ -18,7 +18,10 @@ This is game which uses logic in game.
 
 ## Author
 **Doston Hamrakulov**
->*Computer Systems, Riga Technical University, Riga, Latvia*
+>*Riga Technical University, Riga, Latvia*
+>*Technical University of Chemnitz, Chemnitz, Germany*
+
+>*Self-employement, employement*
 
 ## Google Play Store
 
